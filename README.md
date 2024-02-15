@@ -119,9 +119,13 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
            ```console
            ros2 launch leo_v3 px150_rviz.launch.py
            ```
+      
            This script initializes a PyQt5 application with sliders for controlling the joints of the manipulator. It also provides buttons for moving the manipulator to pre-defined sleep and home positions.
+
            - Go to Sleep Position Button: Moves the manipulator to a pre-defined sleep position.
+
            - Go to Home Position Button: Moves the manipulator to a pre-defined home position.
+
            The script also communicates with the ROS 2 environment to publish joint states for controlling the manipulator. It sets up a timer to periodically send the joint values to the manipulator.
 
            **Dependencies:**
