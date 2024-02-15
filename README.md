@@ -1,4 +1,5 @@
 # Leo Rover Autonomous Exploration
+![image](https://github.com/nathanshankar/leo-rover-autonomous-exploration/assets/66565433/98339707-9d70-47c4-8538-51cc6c2365a4)
 
 Leo Rover represents the pinnacle of innovation in autonomous exploration technology, revolutionizing the way we navigate and explore remote environments. Designed to tackle the most challenging terrains with precision and efficiency, Leo Rover utilizes frontier exploration techniques to autonomously chart uncharted territories, making it an indispensable tool for scientists, researchers, and explorers alike.
 
@@ -81,5 +82,3 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 4. **Navigation and Control**: The robot executes the planned path, relying on its navigation and control systems to move safely and accurately.
 5. **Mapping and Localization**: As the robot explores, it continuously updates its map of the environment and refines its localization estimates.
 
-# The Rover:
-<canvas tabindex="0" data-viewer-canvas="true" width="591" height="622" style="width: 473px; height: 498px; cursor: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAt1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAzMzP6+vri4uISEhKKioqtra2dnZ2EhIR9fX10dHRkZGQdHR3t7e3Hx8e5ubm1tbWoqKhWVlZKSko4ODgICAjv7+/o6OjMzMyxsbFOTk4pKSkXFxcEBAT29vbW1tZ6enpISEgLCwvhzeX+AAAAGXRSTlMANRO0nHRJHfnskIxQRKh89syDVwTWZjEJxPFEswAAAOFJREFUKM+1j+lygkAQhIflEAJe0Rw9u4CCeKKoSTTX+z9XoMJWWeX+ssrvZ3f19DQ5zOw/0DUMQPlmQ72bE2adBp8/Rp3CQUi3ILx+bxj4fjDs9T1Bmo6bbPPN8aDU4bjJt4nb+de789kSFyxn826jW3ICLNZZKU8nWWbrBTCRVm04U8TpjquRFf1Go0d7l8aYOrUR7FGEFr1S9LGymwthgX2gE/Kl0cHPOtF2xOWZ5QpIC93RflW4InkDoPRXesd5LJIMQPzV7tCMa7f6BvhJL79AVDmYTNQ1NhnxbI/uwB8H5Bjd4zQPBAAAAABJRU5ErkJggg==&quot;), auto;"></canvas>
