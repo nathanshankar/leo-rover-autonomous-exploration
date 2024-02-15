@@ -11,7 +11,7 @@ def generate_launch_description():
 
     # Specify the name of the package and path to xacro file within the package
     pkg_name = 'leo_v3'
-    file_subpath = 'urdf/leo.urdf.xacro'
+    file_subpath = 'urdf/px150.urdf.xacro'
 
 
     # Use xacro to process the file
@@ -53,7 +53,7 @@ def generate_launch_description():
     # Add actions to LaunchDescription
     ld.add_action(SetParameter(name='use_sim_time', value=False))
     ld.add_action(node_robot_state_publisher)
-    #ld.add_action(node_manipulator_control_gui)
-    ld.add_action(node_joint_state_publisher)
+    ld.add_action(node_manipulator_control_gui)
+    #ld.add_action(node_joint_state_publisher)
     ld.add_action(node_rviz)
     return ld
