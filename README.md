@@ -65,7 +65,21 @@ The `teleop_twist_keyboard` package (launches on x-term) provides a simple keybo
   - `k` key: Stop the robot's motion (set linear and angular velocity to 0).
 - **Exiting the Teleop Mode**:
   - `q` key: Quit the teleop mode and exit the program.
+```console
+Reading from the keyboard  and Publishing to Twist!
+---------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
 
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+anything else : stop
+
+CTRL-C to quit
+```
 When using `teleop_twist_keyboard`, you'll typically run the node, and then you can use the specified keys on your keyboard to control the robot's motion. This is useful for testing and debugging robot motion without needing physical hardware or a complex control interface.
 
 ## 2. Autonomous Control: Frontier Exploration
