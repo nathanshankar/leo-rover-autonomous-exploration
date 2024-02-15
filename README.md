@@ -12,4 +12,4 @@ Remote operation and monitoring of Leo Rover are facilitated through an intuitiv
 
 Whether it's conducting geological surveys, mapping uncharted territories, or scouting potential sites for exploration, Leo Rover stands ready to lead the way, pushing the boundaries of autonomous exploration and unlocking new frontiers of knowledge and discovery. With Leo Rover at the helm, the future of exploration has never looked brighter.
 
-[![Simulation](https://i.stack.imgur.com/Vp2cE.png)]((https://github.com/nathanshankar/leo-rover-autonomous-exploration/blob/master/nathan's%20leo%20ros2%20frontier%20exploration.mp4)
+https://github.com/nathanshankar/leo-rover-autonomous-exploration/blob/master/nathan's%20leo%20ros2%20frontier%20exploration.mp4
