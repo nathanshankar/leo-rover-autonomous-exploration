@@ -97,3 +97,9 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 4. **Navigation and Control**: The robot executes the planned path, relying on its navigation and control systems to move safely and accurately.
 5. **Mapping and Localization**: As the robot explores, it continuously updates its map of the environment and refines its localization estimates.
 
+# Components:
+1. Leo Rover
+2. PX-150 Manipulator
+3. A2M12 RPLidar
+4. Intel D435i RealSense Depth Camera
+5. Intel NUC
