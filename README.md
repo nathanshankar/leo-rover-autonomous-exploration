@@ -112,7 +112,8 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 
 2. **PX-150 Manipulator:**
     - To spawn the manipulator, run:
-        a. Rviz simulation:
+
+      a. Rviz simulation:
            ```console
            ros2 launch leo_v3 px150_rviz.launch.py
            ```
@@ -126,7 +127,8 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
            - ROS 2
            - std_msgs
            - sensor_msgs
-        b. IGN Gazebo Simulation:
+
+      b. IGN Gazebo Simulation:
            ```console
            ros2 launch leo_v3 px150_gz.launch.py
            ```
