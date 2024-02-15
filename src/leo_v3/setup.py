@@ -42,6 +42,7 @@ setup(
     entry_points={
         'console_scripts': [
             'manipulator_control_gui = leo_v3.manipulator_control_gui:main',
+            'stretch_ignition_control_action_server = leo_v3.stretch_ignition_control_action_server:main',
         ],
     },
 )
