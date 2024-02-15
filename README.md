@@ -98,8 +98,39 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 5. **Mapping and Localization**: As the robot explores, it continuously updates its map of the environment and refines its localization estimates.
 
 # Components:
-1. Leo Rover
-2. PX-150 Manipulator
-3. A2M12 RPLidar
-4. Intel D435i RealSense Depth Camera
-5. Intel NUC
+
+1. **Leo Rover:**
+    - To view the rover, run:
+        a. Rviz simulation:
+           ```console
+           ros2 launch leo_description leo_rviz.launch.py
+           ```
+        b. IGN Gazebo Simulation:
+           ```console
+           ros2 launch leo_v1 leo_gz.launch.py
+           ```
+
+2. **PX-150 Manipulator:**
+    - To spawn the manipulator, run:
+        a. Rviz simulation:
+           ```console
+           ros2 launch leo_v3 px150_rviz.launch.py
+           ```
+           This script initializes a PyQt5 application with sliders for controlling the joints of the manipulator. It also provides buttons for moving the manipulator to pre-defined sleep and home positions.
+            - Go to Sleep Position Button: Moves the manipulator to a pre-defined sleep position.
+            - Go to Home Position Button: Moves the manipulator to a pre-defined home position.
+           The script also communicates with the ROS 2 environment to publish joint states for controlling the manipulator. It sets up a timer to periodically send the joint values to the manipulator.
+
+           **Dependencies:**
+           - PyQt5
+           - ROS 2
+           - std_msgs
+           - sensor_msgs
+        b. IGN Gazebo Simulation:
+           ```console
+           ros2 launch leo_v3 px150_gz.launch.py
+           ```
+
+3. **A2M12 RPLidar**
+4. **Intel D435i RealSense Depth Camera**
+5. **Intel NUC**
