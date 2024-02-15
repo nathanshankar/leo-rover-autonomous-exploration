@@ -13,8 +13,34 @@ Remote operation and monitoring of Leo Rover are facilitated through an intuitiv
 Whether it's conducting geological surveys, mapping uncharted territories, or scouting potential sites for exploration, Leo Rover stands ready to lead the way, pushing the boundaries of autonomous exploration and unlocking new frontiers of knowledge and discovery. With Leo Rover at the helm, the future of exploration has never looked brighter.
 
 # How to use:
+1. Clone the repository onto your local system:
 ```console
 git clone https://github.com/nathanshankar/leo-rover-autonomous-exploration.git
+```
+
+2. Open the directory:
+```console
+cd leo-rover-autonomous-exploration
+```
+
+3. Install dependencies:
+```console
+rosdep install --from-paths src -y --ignore-src
+```
+
+5. Build the workspace:
+```console
+colcon build
+```
+
+6. Source the workspace:
+```console
+source install/setup.bash
+```
+
+7. Launch the autonav file:
+```console
+ros2 launch leo_v4 leo_autosim.launch.py
 ```
 
 # Simulation:
@@ -24,7 +50,7 @@ https://github.com/nathanshankar/leo-rover-autonomous-exploration/assets/6656543
 
 ## 1. Manual Control through teleop_twist_keyboard (User Priority)
 
-The `teleop_twist_keyboard` package provides a simple keyboard teleoperation interface for controlling a robot that subscribes to the `geometry_msgs/Twist` message, which typically controls the linear and angular velocity of the robot.
+The `teleop_twist_keyboard` package (launches on x-term) provides a simple keyboard teleoperation interface for controlling a robot that subscribes to the `geometry_msgs/Twist` message, which typically controls the linear and angular velocity of the robot.
 
 ### Controls:
 
