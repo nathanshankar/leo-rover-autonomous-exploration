@@ -101,10 +101,12 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 
 1. **Leo Rover:**
     - To view the rover, run:
+  
         a. Rviz simulation:
            ```console
            ros2 launch leo_description leo_rviz.launch.py
            ```
+
         b. IGN Gazebo Simulation:
            ```console
            ros2 launch leo_v1 leo_gz.launch.py
@@ -112,6 +114,7 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 
 2. **PX-150 Manipulator:**
     - To spawn the manipulator, run:
+
         a. Rviz simulation:
            ```console
            ros2 launch leo_v3 px150_rviz.launch.py
@@ -126,6 +129,7 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
            - ROS 2
            - std_msgs
            - sensor_msgs
+
         b. IGN Gazebo Simulation:
            ```console
            ros2 launch leo_v3 px150_gz.launch.py
@@ -134,4 +138,5 @@ Frontier exploration aims to autonomously guide robots to explore and map unknow
 3. **A2M12 RPLidar**
 4. **Intel D435i RealSense Depth Camera**
 5. **Intel NUC**
+
 
