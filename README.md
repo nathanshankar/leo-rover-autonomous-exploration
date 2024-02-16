@@ -1,4 +1,4 @@
-# Leo Rover Autonomous Exploration
+# ROS2 Humble: Leo Rover Autonomous Exploration
 ![image](https://github.com/nathanshankar/leo-rover-autonomous-exploration/assets/66565433/98339707-9d70-47c4-8538-51cc6c2365a4)
 *Image source: [Leo Rover Documentation](https://www.leorover.tech/documentation/specification)*
 
