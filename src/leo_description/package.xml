@@ -7,6 +7,15 @@
   <maintainer email="nathanshankar465@gmail.com">nathan</maintainer>
   <license>TODO: License declaration</license>
 
+  <depend>ros_gz_sim</depend>
+  <depend>rviz</depend>
+  <depend>twist_mux</depend>
+  <depend>xterm</depend>
+  <depend>ros_gz_bridge</depend>
+  <depend>navigation2</depend>
+  <depend>nav2_bringup</depend>
+  <depend>slam_toolbox</depend>
+  
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
