@@ -17,7 +17,7 @@ Whether it's conducting geological surveys, mapping uncharted territories, or sc
 # How to use:
 1. Clone the repository onto your local system:
 ```console
-git clone https://github.com/nathanshankar/leo-rover-autonomous-exploration.git
+git clone https://github.com/nathanshankar/leo-rover-autonomous-exploration.git -b jazzy
 ```
 
 2. Open the directory:
