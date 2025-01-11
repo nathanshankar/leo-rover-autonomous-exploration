@@ -1,0 +1,42 @@
+[3.098s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_description build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log --single-version-externally-managed install_data
+[3.489s] /home/nathan/.local/lib/python3.12/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[3.490s]   warnings.warn(msg)
+[3.775s] running egg_info
+[3.820s] writing ../../build/leo_description/leo_description.egg-info/PKG-INFO
+[3.821s] writing dependency_links to ../../build/leo_description/leo_description.egg-info/dependency_links.txt
+[3.821s] writing requirements to ../../build/leo_description/leo_description.egg-info/requires.txt
+[3.821s] writing top-level names to ../../build/leo_description/leo_description.egg-info/top_level.txt
+[3.918s] reading manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+[3.921s] writing manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+[3.922s] running build
+[3.922s] running build_py
+[3.923s] copying leo_description/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description
+[3.923s] running install
+[3.934s] running install_lib
+[3.984s] running install_data
+[3.985s] copying resource/leo_description -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index/packages
+[3.986s] copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description
+[3.986s] copying launch/leo_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch
+[3.986s] copying launch/leo_rviz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch
+[3.986s] copying models/Rocker.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[3.991s] copying models/Antenna.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[3.992s] copying models/Rocker_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[3.992s] copying models/WheelA.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[3.997s] copying models/Chassis_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[3.997s] copying models/Chassis.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[4.018s] copying models/WheelB.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[4.023s] copying models/Wheel_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+[4.024s] copying urdf/leo.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+[4.024s] copying urdf/leo.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+[4.025s] copying urdf/leo_proper.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+[4.025s] copying rviz/leo_view.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz
+[4.025s] copying rviz/nav2.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz
+[4.026s] copying worlds/meshes/wall.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+[4.026s] copying worlds/meshes/hexagon.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+[4.026s] copying worlds/tb3.sdf -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+[4.027s] running install_egg_info
+[4.080s] removing '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description-0.0.0-py3.12.egg-info' (and everything under it)
+[4.080s] Copying ../../build/leo_description/leo_description.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description-0.0.0-py3.12.egg-info
+[4.081s] running install_scripts
+[4.363s] writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log'
+[4.432s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_description build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log --single-version-externally-managed install_data

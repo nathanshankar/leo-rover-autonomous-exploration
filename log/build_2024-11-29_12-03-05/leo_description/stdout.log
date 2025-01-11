@@ -1,0 +1,55 @@
+running egg_info
+creating ../../build/leo_description/leo_description.egg-info
+writing ../../build/leo_description/leo_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/leo_description/leo_description.egg-info/dependency_links.txt
+writing requirements to ../../build/leo_description/leo_description.egg-info/requires.txt
+writing top-level names to ../../build/leo_description/leo_description.egg-info/top_level.txt
+writing manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build
+creating /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib
+creating /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description
+copying leo_description/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description
+running install
+running install_lib
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description
+copying /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description
+byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index/packages
+copying resource/leo_description -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch
+copying launch/leo_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch
+copying launch/leo_rviz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/Rocker.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/Antenna.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/Rocker_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/WheelA.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/Chassis_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/Chassis.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/WheelB.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+copying models/Wheel_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+copying urdf/leo.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+copying urdf/leo.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+copying urdf/leo_proper.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz
+copying rviz/leo_view.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz
+copying rviz/nav2.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+copying worlds/meshes/wall.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+copying worlds/meshes/hexagon.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+copying worlds/tb3.sdf -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/config
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/maps
+running install_egg_info
+Copying ../../build/leo_description/leo_description.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log'

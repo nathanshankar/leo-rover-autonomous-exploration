@@ -1,0 +1,22 @@
+[1.383s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v3 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log --single-version-externally-managed install_data
+[1.599s] running egg_info
+[1.616s] writing ../../build/leo_v3/leo_v3.egg-info/PKG-INFO
+[1.616s] writing dependency_links to ../../build/leo_v3/leo_v3.egg-info/dependency_links.txt
+[1.616s] writing entry points to ../../build/leo_v3/leo_v3.egg-info/entry_points.txt
+[1.616s] writing requirements to ../../build/leo_v3/leo_v3.egg-info/requires.txt
+[1.616s] writing top-level names to ../../build/leo_v3/leo_v3.egg-info/top_level.txt
+[1.650s] reading manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'
+[1.651s] writing manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'
+[1.651s] running build
+[1.651s] running build_py
+[1.652s] running install
+[1.656s] running install_lib
+[1.673s] running install_data
+[1.674s] running install_egg_info
+[1.693s] removing '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3-0.0.0-py3.12.egg-info' (and everything under it)
+[1.693s] Copying ../../build/leo_v3/leo_v3.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3-0.0.0-py3.12.egg-info
+[1.693s] running install_scripts
+[1.801s] Installing manipulator_control_gui script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/leo_v3
+[1.801s] Installing stretch_ignition_control_action_server script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/leo_v3
+[1.802s] writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log'
+[1.834s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v3 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log --single-version-externally-managed install_data

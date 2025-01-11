@@ -1,0 +1,89 @@
+running egg_info
+writing ../../build/leo_v3/leo_v3.egg-info/PKG-INFO
+writing dependency_links to ../../build/leo_v3/leo_v3.egg-info/dependency_links.txt
+writing entry points to ../../build/leo_v3/leo_v3.egg-info/entry_points.txt
+writing requirements to ../../build/leo_v3/leo_v3.egg-info/requires.txt
+writing top-level names to ../../build/leo_v3/leo_v3.egg-info/top_level.txt
+reading manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'
+writing manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'
+running build
+running build_py
+copying leo_v3/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3
+copying leo_v3/manipulator_control_gui.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3
+running install
+running install_lib
+running install_data
+copying resource/leo_v3 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/ament_index/resource_index/packages
+copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3
+copying launch/px150_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch
+copying launch/px150_rviz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch
+copying launch/leo_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch
+copying models/Rocker.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/Antenna.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/Rocker_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/WheelA.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/Chassis_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/Chassis.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/WheelB.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying models/Wheel_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models
+copying meshes/camera_mount2.2_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/base_plate.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/plug_collision.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/camera_mount1.2_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/manipulator_camera_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/camera_mount.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/endeffector_right_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/manipulator_shoulder_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/manipulator_wrist_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/endeffector_left_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/lidar_1.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/manipulator_link1_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/manipulator_link2_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/Lidar_mount_1.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/NUC_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/manipulator_base_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/lidar_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/depth_cam.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/camera_mount2.1_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/Lidar_mount_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/d435.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/base_link.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/camera_mount1.1_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/plug.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/NUC.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying meshes/fixed_camera_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes
+copying px150_meshes/upper_arm.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/wrist.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/gripper_finger.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/base.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/gripper_bar.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/forearm.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/gripper.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/gripper_prop.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying px150_meshes/shoulder.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes
+copying urdf/leo.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/px150_gazebo_configs.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/d435.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/d435i.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/test_d435i.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/materials.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/px150.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/d435i_imu_modules.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/px150_control.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/usb_plug.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/leo.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying urdf/leo_proper.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf
+copying rviz/leo_view.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/rviz
+copying rviz/nav2.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/rviz
+copying worlds/meshes/wall.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds
+copying worlds/meshes/hexagon.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds
+copying worlds/tb3.sdf -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds
+copying config/px150.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/config
+copying config/px150_trajectory_controllers.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/config
+running install_egg_info
+removing '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/leo_v3/leo_v3.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3-0.0.0-py3.12.egg-info
+running install_scripts
+Installing manipulator_control_gui script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/leo_v3
+Installing stretch_ignition_control_action_server script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/leo_v3
+writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log'

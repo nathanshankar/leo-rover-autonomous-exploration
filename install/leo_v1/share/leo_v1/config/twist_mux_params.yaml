@@ -1,0 +1,20 @@
+twist_mux:
+  ros__parameters:
+    output_topic: /leo/cmd_vel
+    use_stamped: false
+    topics:
+      keyboard:
+        topic: teleop_cmd_vel
+        timeout: 0.5  # Explicitly use float for consistency
+        priority: 25
+      nav:
+        topic: nav_cmd_vel
+        timeout: 0.5  # Explicitly use float for consistency
+        priority: 20
+    locks:
+      e_stop:          
+        topic   : e_stop          
+        timeout : 0.0          
+        priority: 255
+
+

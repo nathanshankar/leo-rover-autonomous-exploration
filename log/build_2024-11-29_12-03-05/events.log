@@ -1,0 +1,524 @@
+[0.000000] (-) TimerEvent: {}
+[0.000410] (leo_description) JobQueued: {'identifier': 'leo_description', 'dependencies': OrderedDict()}
+[0.000443] (leo_explorer) JobQueued: {'identifier': 'leo_explorer', 'dependencies': OrderedDict()}
+[0.000457] (leo_v1) JobQueued: {'identifier': 'leo_v1', 'dependencies': OrderedDict()}
+[0.000466] (leo_v2) JobQueued: {'identifier': 'leo_v2', 'dependencies': OrderedDict()}
+[0.000473] (leo_v3) JobQueued: {'identifier': 'leo_v3', 'dependencies': OrderedDict()}
+[0.000479] (leo_v4) JobQueued: {'identifier': 'leo_v4', 'dependencies': OrderedDict()}
+[0.000925] (leo_description) JobStarted: {'identifier': 'leo_description'}
+[0.006151] (leo_explorer) JobStarted: {'identifier': 'leo_explorer'}
+[0.008488] (leo_v1) JobStarted: {'identifier': 'leo_v1'}
+[0.011465] (leo_v2) JobStarted: {'identifier': 'leo_v2'}
+[0.014166] (leo_v3) JobStarted: {'identifier': 'leo_v3'}
+[0.017805] (leo_v4) JobStarted: {'identifier': 'leo_v4'}
+[0.100120] (-) TimerEvent: {}
+[0.174986] (leo_explorer) JobProgress: {'identifier': 'leo_explorer', 'progress': 'cmake'}
+[0.175342] (leo_explorer) Command: {'cmd': ['/usr/bin/cmake', '/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer', '-DCMAKE_INSTALL_PREFIX=/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.200312] (-) TimerEvent: {}
+[0.300618] (-) TimerEvent: {}
+[0.400859] (-) TimerEvent: {}
+[0.501091] (-) TimerEvent: {}
+[0.601305] (-) TimerEvent: {}
+[0.629436] (leo_explorer) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.629796] (leo_explorer) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.629877] (leo_explorer) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.629931] (leo_explorer) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.629975] (leo_explorer) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.630014] (leo_explorer) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.630053] (leo_explorer) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.630090] (leo_explorer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.630126] (leo_explorer) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.630161] (leo_explorer) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.630199] (leo_explorer) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.630233] (leo_explorer) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.630267] (leo_explorer) StdoutLine: {'line': b'-- BuilD for ROS2: jazzy\n'}
+[0.630305] (leo_explorer) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.630548] (leo_explorer) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.701485] (-) TimerEvent: {}
+[0.708058] (leo_explorer) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.737774] (leo_explorer) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.746894] (leo_explorer) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.757754] (leo_explorer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.770001] (leo_explorer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801678] (-) TimerEvent: {}
+[0.833542] (leo_explorer) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.835810] (leo_explorer) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901845] (-) TimerEvent: {}
+[0.918238] (leo_explorer) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.956008] (leo_explorer) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.987414] (leo_explorer) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.002149] (-) TimerEvent: {}
+[1.054843] (leo_explorer) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.067521] (leo_explorer) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.102460] (-) TimerEvent: {}
+[1.104467] (leo_explorer) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[1.202731] (-) TimerEvent: {}
+[1.225915] (leo_explorer) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[1.235244] (leo_explorer) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[1.236370] (leo_explorer) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.236546] (leo_explorer) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.238733] (leo_explorer) StdoutLine: {'line': b'-- Found nav2_msgs: 1.3.3 (/opt/ros/jazzy/share/nav2_msgs/cmake)\n'}
+[1.303055] (-) TimerEvent: {}
+[1.310740] (leo_v1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/leo_v1', 'build', '--build-base', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build', 'install', '--record', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.313363] (leo_v2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/leo_v2', 'build', '--build-base', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build', 'install', '--record', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.316252] (leo_v4) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/leo_v4', 'build', '--build-base', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build', 'install', '--record', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v4/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v4', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v4', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.318641] (leo_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/leo_description', 'build', '--build-base', '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/build', 'install', '--record', '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/src/leo_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.321960] (leo_v3) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/leo_v3', 'build', '--build-base', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build', 'install', '--record', '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.350172] (leo_explorer) StdoutLine: {'line': b'-- Found map_msgs: 2.4.1 (/opt/ros/jazzy/share/map_msgs/cmake)\n'}
+[1.380987] (leo_explorer) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.5 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[1.403217] (-) TimerEvent: {}
+[1.408897] (leo_explorer) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.3.3 (/opt/ros/jazzy/share/nav2_costmap_2d/cmake)\n'}
+[1.503458] (-) TimerEvent: {}
+[1.521042] (leo_v1) StdoutLine: {'line': b'running egg_info\n'}
+[1.521466] (leo_v1) StdoutLine: {'line': b'creating ../../build/leo_v1/leo_v1.egg-info\n'}
+[1.523243] (leo_v2) StdoutLine: {'line': b'running egg_info\n'}
+[1.523571] (leo_v2) StdoutLine: {'line': b'creating ../../build/leo_v2/leo_v2.egg-info\n'}
+[1.528083] (leo_v4) StdoutLine: {'line': b'running egg_info\n'}
+[1.528289] (leo_v4) StdoutLine: {'line': b'creating ../../build/leo_v4/leo_v4.egg-info\n'}
+[1.535135] (leo_v1) StdoutLine: {'line': b'writing ../../build/leo_v1/leo_v1.egg-info/PKG-INFO\n'}
+[1.535579] (leo_v1) StdoutLine: {'line': b'writing dependency_links to ../../build/leo_v1/leo_v1.egg-info/dependency_links.txt\n'}
+[1.535703] (leo_v1) StdoutLine: {'line': b'writing requirements to ../../build/leo_v1/leo_v1.egg-info/requires.txt\n'}
+[1.535806] (leo_v1) StdoutLine: {'line': b'writing top-level names to ../../build/leo_v1/leo_v1.egg-info/top_level.txt\n'}
+[1.535917] (leo_v1) StdoutLine: {'line': b"writing manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'\n"}
+[1.537243] (leo_v2) StdoutLine: {'line': b'writing ../../build/leo_v2/leo_v2.egg-info/PKG-INFO\n'}
+[1.537438] (leo_v2) StdoutLine: {'line': b'writing dependency_links to ../../build/leo_v2/leo_v2.egg-info/dependency_links.txt\n'}
+[1.537602] (leo_v2) StdoutLine: {'line': b'writing entry points to ../../build/leo_v2/leo_v2.egg-info/entry_points.txt\n'}
+[1.537715] (leo_v2) StdoutLine: {'line': b'writing requirements to ../../build/leo_v2/leo_v2.egg-info/requires.txt\n'}
+[1.537820] (leo_v2) StdoutLine: {'line': b'writing top-level names to ../../build/leo_v2/leo_v2.egg-info/top_level.txt\n'}
+[1.537957] (leo_v2) StdoutLine: {'line': b"writing manifest file '../../build/leo_v2/leo_v2.egg-info/SOURCES.txt'\n"}
+[1.540443] (leo_description) StdoutLine: {'line': b'running egg_info\n'}
+[1.540755] (leo_description) StdoutLine: {'line': b'creating ../../build/leo_description/leo_description.egg-info\n'}
+[1.541256] (leo_explorer) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.542460] (leo_v4) StdoutLine: {'line': b'writing ../../build/leo_v4/leo_v4.egg-info/PKG-INFO\n'}
+[1.542663] (leo_v4) StdoutLine: {'line': b'writing dependency_links to ../../build/leo_v4/leo_v4.egg-info/dependency_links.txt\n'}
+[1.542780] (leo_v4) StdoutLine: {'line': b'writing entry points to ../../build/leo_v4/leo_v4.egg-info/entry_points.txt\n'}
+[1.543046] (leo_v4) StdoutLine: {'line': b'writing requirements to ../../build/leo_v4/leo_v4.egg-info/requires.txt\n'}
+[1.543201] (leo_v4) StdoutLine: {'line': b'writing top-level names to ../../build/leo_v4/leo_v4.egg-info/top_level.txt\n'}
+[1.543303] (leo_v4) StdoutLine: {'line': b"writing manifest file '../../build/leo_v4/leo_v4.egg-info/SOURCES.txt'\n"}
+[1.554970] (leo_description) StdoutLine: {'line': b'writing ../../build/leo_description/leo_description.egg-info/PKG-INFO\n'}
+[1.555339] (leo_description) StdoutLine: {'line': b'writing dependency_links to ../../build/leo_description/leo_description.egg-info/dependency_links.txt\n'}
+[1.555490] (leo_description) StdoutLine: {'line': b'writing requirements to ../../build/leo_description/leo_description.egg-info/requires.txt\n'}
+[1.555604] (leo_description) StdoutLine: {'line': b'writing top-level names to ../../build/leo_description/leo_description.egg-info/top_level.txt\n'}
+[1.555746] (leo_description) StdoutLine: {'line': b"writing manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'\n"}
+[1.565127] (leo_v1) StdoutLine: {'line': b"reading manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'\n"}
+[1.565788] (leo_v1) StdoutLine: {'line': b"writing manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'\n"}
+[1.565989] (leo_v1) StdoutLine: {'line': b'running build\n'}
+[1.566295] (leo_v1) StdoutLine: {'line': b'running build_py\n'}
+[1.566412] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build\n'}
+[1.566516] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build/lib\n'}
+[1.566617] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build/lib/leo_v1\n'}
+[1.566718] (leo_v1) StdoutLine: {'line': b'copying leo_v1/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build/lib/leo_v1\n'}
+[1.566830] (leo_v1) StdoutLine: {'line': b'running install\n'}
+[1.567541] (leo_v2) StdoutLine: {'line': b"reading manifest file '../../build/leo_v2/leo_v2.egg-info/SOURCES.txt'\n"}
+[1.568137] (leo_v2) StdoutLine: {'line': b"writing manifest file '../../build/leo_v2/leo_v2.egg-info/SOURCES.txt'\n"}
+[1.568320] (leo_v2) StdoutLine: {'line': b'running build\n'}
+[1.568517] (leo_v2) StdoutLine: {'line': b'running build_py\n'}
+[1.568643] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build\n'}
+[1.568763] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib\n'}
+[1.568935] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2\n'}
+[1.569067] (leo_v2) StdoutLine: {'line': b'copying leo_v2/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2\n'}
+[1.569187] (leo_v2) StdoutLine: {'line': b'copying leo_v2/map_saver.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2\n'}
+[1.569304] (leo_v2) StdoutLine: {'line': b'running install\n'}
+[1.572092] (leo_v1) StdoutLine: {'line': b'running install_lib\n'}
+[1.574444] (leo_v4) StdoutLine: {'line': b"reading manifest file '../../build/leo_v4/leo_v4.egg-info/SOURCES.txt'\n"}
+[1.574778] (leo_v2) StdoutLine: {'line': b'running install_lib\n'}
+[1.575012] (leo_v4) StdoutLine: {'line': b"writing manifest file '../../build/leo_v4/leo_v4.egg-info/SOURCES.txt'\n"}
+[1.575163] (leo_v4) StdoutLine: {'line': b'running build\n'}
+[1.575270] (leo_v4) StdoutLine: {'line': b'running build_py\n'}
+[1.575419] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build\n'}
+[1.575527] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build/lib\n'}
+[1.575633] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build/lib/leo_v4\n'}
+[1.575740] (leo_v4) StdoutLine: {'line': b'copying leo_v4/autonav_starter.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build/lib/leo_v4\n'}
+[1.575895] (leo_v4) StdoutLine: {'line': b'copying leo_v4/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build/lib/leo_v4\n'}
+[1.576013] (leo_v4) StdoutLine: {'line': b'running install\n'}
+[1.581439] (leo_v4) StdoutLine: {'line': b'running install_lib\n'}
+[1.587203] (leo_description) StdoutLine: {'line': b"reading manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'\n"}
+[1.587870] (leo_description) StdoutLine: {'line': b"writing manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'\n"}
+[1.588030] (leo_description) StdoutLine: {'line': b'running build\n'}
+[1.588278] (leo_description) StdoutLine: {'line': b'running build_py\n'}
+[1.588392] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build\n'}
+[1.588507] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib\n'}
+[1.588622] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1\n'}
+[1.588773] (leo_v1) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build/lib/leo_v1/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1\n'}
+[1.588892] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description\n'}
+[1.589015] (leo_description) StdoutLine: {'line': b'copying leo_description/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description\n'}
+[1.589131] (leo_description) StdoutLine: {'line': b'running install\n'}
+[1.589368] (leo_v1) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1/__init__.py to __init__.cpython-312.pyc\n'}
+[1.589501] (leo_v1) StdoutLine: {'line': b'running install_data\n'}
+[1.589612] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/ament_index\n'}
+[1.589724] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/ament_index/resource_index\n'}
+[1.589836] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/ament_index/resource_index/packages\n'}
+[1.589963] (leo_v1) StdoutLine: {'line': b'copying resource/leo_v1 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/ament_index/resource_index/packages\n'}
+[1.590080] (leo_v1) StdoutLine: {'line': b'copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1\n'}
+[1.590198] (leo_v1) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/launch\n'}
+[1.590314] (leo_v1) StdoutLine: {'line': b'copying launch/leo_v1_sim.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/launch\n'}
+[1.590469] (leo_v1) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.590949] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2\n'}
+[1.591125] (leo_v2) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2\n'}
+[1.591235] (leo_v2) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2/map_saver.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2\n'}
+[1.591540] (leo_v2) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2/__init__.py to __init__.cpython-312.pyc\n'}
+[1.591723] (leo_v2) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2/map_saver.py to map_saver.cpython-312.pyc\n'}
+[1.592390] (leo_v2) StdoutLine: {'line': b'running install_data\n'}
+[1.592551] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index\n'}
+[1.592661] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index/resource_index\n'}
+[1.592768] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index/resource_index/packages\n'}
+[1.592957] (leo_v2) StdoutLine: {'line': b'copying resource/leo_v2 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index/resource_index/packages\n'}
+[1.593080] (leo_v2) StdoutLine: {'line': b'copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2\n'}
+[1.593192] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/launch\n'}
+[1.593298] (leo_v2) StdoutLine: {'line': b'copying launch/leo_autonav.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/launch\n'}
+[1.593404] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config\n'}
+[1.593510] (leo_v2) StdoutLine: {'line': b'copying config/controller.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config\n'}
+[1.593619] (leo_v2) StdoutLine: {'line': b'copying config/planner.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config\n'}
+[1.593771] (leo_v2) StdoutLine: {'line': b'copying config/bt_nav.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config\n'}
+[1.593896] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/maps\n'}
+[1.594005] (leo_v2) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/behavior_tree_xml\n'}
+[1.594109] (leo_v2) StdoutLine: {'line': b'copying behavior_tree_xml/modified.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/behavior_tree_xml\n'}
+[1.594217] (leo_v2) StdoutLine: {'line': b'copying behavior_tree_xml/nav_to_pose_with_consistent_replanning_and_if_path_becomes_invalid.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/behavior_tree_xml\n'}
+[1.594324] (leo_v2) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.594455] (leo_description) StdoutLine: {'line': b'running install_lib\n'}
+[1.598090] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages/leo_v4\n'}
+[1.598268] (leo_v4) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build/lib/leo_v4/autonav_starter.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages/leo_v4\n'}
+[1.598420] (leo_v4) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build/lib/leo_v4/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages/leo_v4\n'}
+[1.598705] (leo_v4) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages/leo_v4/autonav_starter.py to autonav_starter.cpython-312.pyc\n'}
+[1.599359] (leo_v4) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages/leo_v4/__init__.py to __init__.cpython-312.pyc\n'}
+[1.599544] (leo_v4) StdoutLine: {'line': b'running install_data\n'}
+[1.599652] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/ament_index\n'}
+[1.599759] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/ament_index/resource_index\n'}
+[1.599932] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/ament_index/resource_index/packages\n'}
+[1.600046] (leo_v4) StdoutLine: {'line': b'copying resource/leo_v4 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/ament_index/resource_index/packages\n'}
+[1.600157] (leo_v4) StdoutLine: {'line': b'copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4\n'}
+[1.600268] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/launch\n'}
+[1.600379] (leo_v4) StdoutLine: {'line': b'copying launch/leo_autosim.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/launch\n'}
+[1.600489] (leo_v4) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/config\n'}
+[1.600641] (leo_v4) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.603584] (-) TimerEvent: {}
+[1.603845] (leo_v3) StdoutLine: {'line': b'running egg_info\n'}
+[1.604208] (leo_v3) StdoutLine: {'line': b'creating ../../build/leo_v3/leo_v3.egg-info\n'}
+[1.605648] (leo_v1) StdoutLine: {'line': b'Copying ../../build/leo_v1/leo_v1.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1-0.0.0-py3.12.egg-info\n'}
+[1.606150] (leo_v1) StdoutLine: {'line': b'running install_scripts\n'}
+[1.609864] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description\n'}
+[1.610019] (leo_description) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build/lib/leo_description/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description\n'}
+[1.610177] (leo_v2) StdoutLine: {'line': b'Copying ../../build/leo_v2/leo_v2.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2-0.0.0-py3.12.egg-info\n'}
+[1.610374] (leo_description) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description/__init__.py to __init__.cpython-312.pyc\n'}
+[1.610557] (leo_description) StdoutLine: {'line': b'running install_data\n'}
+[1.610698] (leo_v2) StdoutLine: {'line': b'running install_scripts\n'}
+[1.610866] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index\n'}
+[1.610992] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index\n'}
+[1.611108] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index/packages\n'}
+[1.611226] (leo_description) StdoutLine: {'line': b'copying resource/leo_description -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/ament_index/resource_index/packages\n'}
+[1.611345] (leo_description) StdoutLine: {'line': b'copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description\n'}
+[1.611486] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch\n'}
+[1.611645] (leo_description) StdoutLine: {'line': b'copying launch/leo_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch\n'}
+[1.611754] (leo_description) StdoutLine: {'line': b'copying launch/leo_rviz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/launch\n'}
+[1.611868] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.611983] (leo_description) StdoutLine: {'line': b'copying models/Rocker.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.612985] (leo_description) StdoutLine: {'line': b'copying models/Antenna.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.613129] (leo_description) StdoutLine: {'line': b'copying models/Rocker_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.613275] (leo_description) StdoutLine: {'line': b'copying models/WheelA.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.615019] (leo_description) StdoutLine: {'line': b'copying models/Chassis_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.615240] (leo_description) StdoutLine: {'line': b'copying models/Chassis.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.618227] (leo_v4) StdoutLine: {'line': b'Copying ../../build/leo_v4/leo_v4.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages/leo_v4-0.0.0-py3.12.egg-info\n'}
+[1.618842] (leo_v4) StdoutLine: {'line': b'running install_scripts\n'}
+[1.622289] (leo_description) StdoutLine: {'line': b'copying models/WheelB.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.623967] (leo_description) StdoutLine: {'line': b'copying models/Wheel_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/models\n'}
+[1.624145] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf\n'}
+[1.624261] (leo_description) StdoutLine: {'line': b'copying urdf/leo.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf\n'}
+[1.624423] (leo_description) StdoutLine: {'line': b'copying urdf/leo.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf\n'}
+[1.624578] (leo_description) StdoutLine: {'line': b'copying urdf/leo_proper.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/urdf\n'}
+[1.624693] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz\n'}
+[1.624804] (leo_description) StdoutLine: {'line': b'copying rviz/leo_view.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz\n'}
+[1.624980] (leo_description) StdoutLine: {'line': b'copying rviz/nav2.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/rviz\n'}
+[1.625093] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds\n'}
+[1.625198] (leo_description) StdoutLine: {'line': b'copying worlds/meshes/wall.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds\n'}
+[1.625301] (leo_description) StdoutLine: {'line': b'copying worlds/meshes/hexagon.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds\n'}
+[1.625404] (leo_description) StdoutLine: {'line': b'copying worlds/tb3.sdf -> /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/worlds\n'}
+[1.625507] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/config\n'}
+[1.625610] (leo_description) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/maps\n'}
+[1.625714] (leo_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.627771] (leo_v3) StdoutLine: {'line': b'writing ../../build/leo_v3/leo_v3.egg-info/PKG-INFO\n'}
+[1.627936] (leo_v3) StdoutLine: {'line': b'writing dependency_links to ../../build/leo_v3/leo_v3.egg-info/dependency_links.txt\n'}
+[1.628087] (leo_v3) StdoutLine: {'line': b'writing entry points to ../../build/leo_v3/leo_v3.egg-info/entry_points.txt\n'}
+[1.628246] (leo_v3) StdoutLine: {'line': b'writing requirements to ../../build/leo_v3/leo_v3.egg-info/requires.txt\n'}
+[1.628364] (leo_v3) StdoutLine: {'line': b'writing top-level names to ../../build/leo_v3/leo_v3.egg-info/top_level.txt\n'}
+[1.628501] (leo_v3) StdoutLine: {'line': b"writing manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'\n"}
+[1.640732] (leo_description) StdoutLine: {'line': b'Copying ../../build/leo_description/leo_description.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description-0.0.0-py3.12.egg-info\n'}
+[1.641429] (leo_description) StdoutLine: {'line': b'running install_scripts\n'}
+[1.643111] (leo_explorer) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[1.645109] (leo_explorer) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.648646] (leo_explorer) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.659710] (leo_v3) StdoutLine: {'line': b"reading manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'\n"}
+[1.660606] (leo_v3) StdoutLine: {'line': b"writing manifest file '../../build/leo_v3/leo_v3.egg-info/SOURCES.txt'\n"}
+[1.660784] (leo_v3) StdoutLine: {'line': b'running build\n'}
+[1.660922] (leo_v3) StdoutLine: {'line': b'running build_py\n'}
+[1.661223] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build\n'}
+[1.661379] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib\n'}
+[1.661495] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3\n'}
+[1.661613] (leo_v3) StdoutLine: {'line': b'copying leo_v3/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3\n'}
+[1.661729] (leo_v3) StdoutLine: {'line': b'copying leo_v3/manipulator_control_gui.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3\n'}
+[1.661842] (leo_v3) StdoutLine: {'line': b'running install\n'}
+[1.666729] (leo_v3) StdoutLine: {'line': b'running install_lib\n'}
+[1.682800] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3\n'}
+[1.683293] (leo_v3) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3\n'}
+[1.683449] (leo_v3) StdoutLine: {'line': b'copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build/lib/leo_v3/manipulator_control_gui.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3\n'}
+[1.683609] (leo_v3) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3/__init__.py to __init__.cpython-312.pyc\n'}
+[1.683757] (leo_v3) StdoutLine: {'line': b'byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3/manipulator_control_gui.py to manipulator_control_gui.cpython-312.pyc\n'}
+[1.685852] (leo_v3) StdoutLine: {'line': b'running install_data\n'}
+[1.686138] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/ament_index\n'}
+[1.686264] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/ament_index/resource_index\n'}
+[1.686377] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/ament_index/resource_index/packages\n'}
+[1.686486] (leo_v3) StdoutLine: {'line': b'copying resource/leo_v3 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/ament_index/resource_index/packages\n'}
+[1.686629] (leo_v3) StdoutLine: {'line': b'copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3\n'}
+[1.686798] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch\n'}
+[1.686923] (leo_v3) StdoutLine: {'line': b'copying launch/px150_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch\n'}
+[1.687029] (leo_v3) StdoutLine: {'line': b'copying launch/px150_rviz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch\n'}
+[1.687130] (leo_v3) StdoutLine: {'line': b'copying launch/leo_gz.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/launch\n'}
+[1.687230] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.687342] (leo_v3) StdoutLine: {'line': b'copying models/Rocker.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.688329] (leo_v3) StdoutLine: {'line': b'copying models/Antenna.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.688508] (leo_v3) StdoutLine: {'line': b'copying models/Rocker_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.688627] (leo_v3) StdoutLine: {'line': b'copying models/WheelA.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.689995] (leo_v3) StdoutLine: {'line': b'copying models/Chassis_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.690116] (leo_v3) StdoutLine: {'line': b'copying models/Chassis.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.696591] (leo_v3) StdoutLine: {'line': b'copying models/WheelB.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.698204] (leo_v3) StdoutLine: {'line': b'copying models/Wheel_outline.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/models\n'}
+[1.698375] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.698484] (leo_v3) StdoutLine: {'line': b'copying meshes/camera_mount2.2_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.698622] (leo_v3) StdoutLine: {'line': b'copying meshes/base_plate.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.698760] (leo_v3) StdoutLine: {'line': b'copying meshes/plug_collision.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.698868] (leo_v3) StdoutLine: {'line': b'copying meshes/camera_mount1.2_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.699000] (leo_v3) StdoutLine: {'line': b'copying meshes/manipulator_camera_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.699160] (leo_v3) StdoutLine: {'line': b'copying meshes/camera_mount.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.699570] (leo_v3) StdoutLine: {'line': b'copying meshes/endeffector_right_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.699707] (leo_v3) StdoutLine: {'line': b'copying meshes/manipulator_shoulder_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.699809] (leo_v3) StdoutLine: {'line': b'copying meshes/manipulator_wrist_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.699956] (leo_v3) StdoutLine: {'line': b'copying meshes/endeffector_left_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.700076] (leo_v3) StdoutLine: {'line': b'copying meshes/lidar_1.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.700219] (leo_v3) StdoutLine: {'line': b'copying meshes/manipulator_link1_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.700329] (leo_v3) StdoutLine: {'line': b'copying meshes/manipulator_link2_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.700455] (leo_v3) StdoutLine: {'line': b'copying meshes/Lidar_mount_1.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.700635] (leo_v3) StdoutLine: {'line': b'copying meshes/NUC_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.702408] (leo_v3) StdoutLine: {'line': b'copying meshes/manipulator_base_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.702553] (leo_v3) StdoutLine: {'line': b'copying meshes/lidar_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.702678] (leo_v3) StdoutLine: {'line': b'copying meshes/depth_cam.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.703490] (leo_v3) StdoutLine: {'line': b'copying meshes/camera_mount2.1_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.703611] (-) TimerEvent: {}
+[1.703775] (leo_v3) StdoutLine: {'line': b'copying meshes/Lidar_mount_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.703919] (leo_v3) StdoutLine: {'line': b'copying meshes/d435.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.711750] (leo_v1) StdoutLine: {'line': b"writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log'\n"}
+[1.712323] (leo_v3) StdoutLine: {'line': b'copying meshes/base_link.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.712521] (leo_v3) StdoutLine: {'line': b'copying meshes/camera_mount1.1_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.712666] (leo_v3) StdoutLine: {'line': b'copying meshes/plug.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.712868] (leo_v3) StdoutLine: {'line': b'copying meshes/NUC.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.716737] (leo_v3) StdoutLine: {'line': b'copying meshes/fixed_camera_1.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/meshes\n'}
+[1.717048] (leo_v2) StdoutLine: {'line': b'Installing map_saver script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/leo_v2\n'}
+[1.717308] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.717482] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/upper_arm.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.717610] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/wrist.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.717732] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/gripper_finger.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.717851] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/base.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.718190] (leo_v2) StdoutLine: {'line': b"writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/install.log'\n"}
+[1.718387] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/gripper_bar.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.718503] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/forearm.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.718617] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/gripper.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.718731] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/gripper_prop.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.718955] (leo_v3) StdoutLine: {'line': b'copying px150_meshes/shoulder.stl -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/px150_meshes\n'}
+[1.719089] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719206] (leo_v3) StdoutLine: {'line': b'copying urdf/leo.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719323] (leo_v3) StdoutLine: {'line': b'copying urdf/px150_gazebo_configs.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719438] (leo_v3) StdoutLine: {'line': b'copying urdf/d435.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719560] (leo_v3) StdoutLine: {'line': b'copying urdf/d435i.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719751] (leo_v3) StdoutLine: {'line': b'copying urdf/test_d435i.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719874] (leo_v3) StdoutLine: {'line': b'copying urdf/materials.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.719999] (leo_v3) StdoutLine: {'line': b'copying urdf/px150.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.720121] (leo_v3) StdoutLine: {'line': b'copying urdf/d435i_imu_modules.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.720234] (leo_v3) StdoutLine: {'line': b'copying urdf/px150_control.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.720350] (leo_v3) StdoutLine: {'line': b'copying urdf/usb_plug.urdf.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.720471] (leo_v3) StdoutLine: {'line': b'copying urdf/leo.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.720589] (leo_v3) StdoutLine: {'line': b'copying urdf/leo_proper.gazebo.xacro -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/urdf\n'}
+[1.720707] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/rviz\n'}
+[1.720823] (leo_v3) StdoutLine: {'line': b'copying rviz/leo_view.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/rviz\n'}
+[1.720960] (leo_v3) StdoutLine: {'line': b'copying rviz/nav2.rviz -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/rviz\n'}
+[1.721087] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds\n'}
+[1.721196] (leo_v3) StdoutLine: {'line': b'copying worlds/meshes/wall.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds\n'}
+[1.721310] (leo_v3) StdoutLine: {'line': b'copying worlds/meshes/hexagon.dae -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds\n'}
+[1.721430] (leo_v3) StdoutLine: {'line': b'copying worlds/tb3.sdf -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/worlds\n'}
+[1.721538] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/config\n'}
+[1.721656] (leo_v3) StdoutLine: {'line': b'copying config/px150.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/config\n'}
+[1.721764] (leo_v3) StdoutLine: {'line': b'copying config/px150_trajectory_controllers.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/config\n'}
+[1.721881] (leo_v3) StdoutLine: {'line': b'creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/maps\n'}
+[1.722002] (leo_v3) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.725359] (leo_v4) StdoutLine: {'line': b'Installing autonav_starter script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/leo_v4\n'}
+[1.725624] (leo_v4) StdoutLine: {'line': b"writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v4/install.log'\n"}
+[1.736926] (leo_v3) StdoutLine: {'line': b'Copying ../../build/leo_v3/leo_v3.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages/leo_v3-0.0.0-py3.12.egg-info\n'}
+[1.737414] (leo_v3) StdoutLine: {'line': b'running install_scripts\n'}
+[1.738871] (leo_v1) CommandEnded: {'returncode': 0}
+[1.748779] (leo_description) StdoutLine: {'line': b"writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log'\n"}
+[1.749726] (leo_v1) JobEnded: {'identifier': 'leo_v1', 'rc': 0}
+[1.751509] (leo_v2) CommandEnded: {'returncode': 0}
+[1.758560] (leo_v2) JobEnded: {'identifier': 'leo_v2', 'rc': 0}
+[1.759967] (leo_v4) CommandEnded: {'returncode': 0}
+[1.760608] (leo_explorer) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.761795] (leo_explorer) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.766513] (leo_v4) JobEnded: {'identifier': 'leo_v4', 'rc': 0}
+[1.769007] (leo_explorer) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.769292] (leo_explorer) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include;$<BUILD_INTERFACE:/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include>\n'}
+[1.769398] (leo_explorer) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.770001] (leo_explorer) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.770132] (leo_explorer) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[1.770593] (leo_explorer) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.771181] (leo_explorer) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.771903] (leo_explorer) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.772026] (leo_explorer) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.772318] (leo_explorer) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.773764] (leo_explorer) StdoutLine: {'line': b'-- Configuring done (1.6s)\n'}
+[1.774581] (leo_description) CommandEnded: {'returncode': 0}
+[1.782987] (leo_description) JobEnded: {'identifier': 'leo_description', 'rc': 0}
+[1.803730] (-) TimerEvent: {}
+[1.829654] (leo_explorer) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.835729] (leo_v3) StdoutLine: {'line': b'Installing manipulator_control_gui script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/leo_v3\n'}
+[1.835893] (leo_v3) StdoutLine: {'line': b'Installing stretch_ignition_control_action_server script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/leo_v3\n'}
+[1.836046] (leo_v3) StdoutLine: {'line': b"writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log'\n"}
+[1.837543] (leo_explorer) StdoutLine: {'line': b'-- Build files have been written to: /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer\n'}
+[1.847762] (leo_explorer) CommandEnded: {'returncode': 0}
+[1.848986] (leo_explorer) JobProgress: {'identifier': 'leo_explorer', 'progress': 'build'}
+[1.849006] (leo_explorer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', '--', '-j20', '-l20'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.855509] (leo_v3) CommandEnded: {'returncode': 0}
+[1.862127] (leo_v3) JobEnded: {'identifier': 'leo_v3', 'rc': 0}
+[1.903852] (-) TimerEvent: {}
+[1.905104] (leo_explorer) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.905621] (leo_explorer) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o\x1b[0m\n'}
+[1.905802] (leo_explorer) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o\x1b[0m\n'}
+[1.906456] (leo_explorer) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[1.908693] (leo_explorer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o\x1b[0m\n'}
+[2.004032] (-) TimerEvent: {}
+[2.104488] (-) TimerEvent: {}
+[2.204939] (-) TimerEvent: {}
+[2.305360] (-) TimerEvent: {}
+[2.405647] (-) TimerEvent: {}
+[2.481431] (leo_explorer) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[2.505907] (-) TimerEvent: {}
+[2.519501] (leo_explorer) StdoutLine: {'line': b'[ 60%] Built target gtest_main\n'}
+[2.606158] (-) TimerEvent: {}
+[2.706663] (-) TimerEvent: {}
+[2.807183] (-) TimerEvent: {}
+[2.907633] (-) TimerEvent: {}
+[3.007992] (-) TimerEvent: {}
+[3.108339] (-) TimerEvent: {}
+[3.208694] (-) TimerEvent: {}
+[3.309133] (-) TimerEvent: {}
+[3.409591] (-) TimerEvent: {}
+[3.510019] (-) TimerEvent: {}
+[3.610470] (-) TimerEvent: {}
+[3.710955] (-) TimerEvent: {}
+[3.811432] (-) TimerEvent: {}
+[3.911891] (-) TimerEvent: {}
+[4.012252] (-) TimerEvent: {}
+[4.112689] (-) TimerEvent: {}
+[4.213209] (-) TimerEvent: {}
+[4.313667] (-) TimerEvent: {}
+[4.414114] (-) TimerEvent: {}
+[4.514538] (-) TimerEvent: {}
+[4.615033] (-) TimerEvent: {}
+[4.715431] (-) TimerEvent: {}
+[4.815887] (-) TimerEvent: {}
+[4.891135] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kexplore::Explore::\x1b[01;32m\x1b[KExplore\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.891393] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:130:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::TimerBase::execute_callback()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.891498] (leo_explorer) StderrLine: {'line': b'  130 |   \x1b[01;31m\x1b[Kexploring_timer_->execute_callback()\x1b[m\x1b[K;\n'}
+[4.891590] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[4.891679] (leo_explorer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:30\x1b[m\x1b[K,\n'}
+[4.891768] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.891863] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.891960] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.892047] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[4.892133] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[4.892220] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.892305] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.892390] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[4.892476] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer_interface.h:48\x1b[m\x1b[K,\n'}
+[4.892560] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer.h:43\x1b[m\x1b[K,\n'}
+[4.892646] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include/explore/costmap_client.h:41\x1b[m\x1b[K,\n'}
+[4.892733] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include/explore/explore.h:41\x1b[m\x1b[K,\n'}
+[4.892828] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:39\x1b[m\x1b[K:\n'}
+[4.892924] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rclcpp::TimerBase::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.893014] (leo_explorer) StderrLine: {'line': b'  124 |   \x1b[01;36m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void> & data) = 0;\n'}
+[4.893104] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.893198] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[4.908641] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid explore::Explore::\x1b[01;32m\x1b[Kresume\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.908853] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:414:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::TimerBase::execute_callback()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.908961] (leo_explorer) StderrLine: {'line': b'  414 |   \x1b[01;31m\x1b[Kexploring_timer_->execute_callback()\x1b[m\x1b[K;\n'}
+[4.909046] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[4.909128] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rclcpp::TimerBase::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.909211] (leo_explorer) StderrLine: {'line': b'  124 |   \x1b[01;36m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void> & data) = 0;\n'}
+[4.909292] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.909371] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[4.916116] (-) TimerEvent: {}
+[4.940760] (leo_explorer) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[4.998542] (leo_explorer) StdoutLine: {'line': b'[ 70%] Built target gtest\n'}
+[5.016229] (-) TimerEvent: {}
+[5.019843] (leo_explorer) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o\x1b[0m\n'}
+[5.116336] (-) TimerEvent: {}
+[5.216746] (-) TimerEvent: {}
+[5.317108] (-) TimerEvent: {}
+[5.417440] (-) TimerEvent: {}
+[5.517721] (-) TimerEvent: {}
+[5.618094] (-) TimerEvent: {}
+[5.718430] (-) TimerEvent: {}
+[5.818679] (-) TimerEvent: {}
+[5.894147] (leo_explorer) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable test_explore\x1b[0m\n'}
+[5.918744] (-) TimerEvent: {}
+[6.018998] (-) TimerEvent: {}
+[6.119306] (-) TimerEvent: {}
+[6.219625] (-) TimerEvent: {}
+[6.319871] (-) TimerEvent: {}
+[6.420105] (-) TimerEvent: {}
+[6.520328] (-) TimerEvent: {}
+[6.569781] (leo_explorer) StdoutLine: {'line': b'[ 90%] Built target test_explore\n'}
+[6.620425] (-) TimerEvent: {}
+[6.720671] (-) TimerEvent: {}
+[6.820951] (-) TimerEvent: {}
+[6.921190] (-) TimerEvent: {}
+[7.021418] (-) TimerEvent: {}
+[7.121679] (-) TimerEvent: {}
+[7.221927] (-) TimerEvent: {}
+[7.247369] (leo_explorer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/explore.dir/build.make:90: CMakeFiles/explore.dir/src/explore.cpp.o] Error 1\n'}
+[7.247506] (leo_explorer) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[7.322017] (-) TimerEvent: {}
+[7.422221] (-) TimerEvent: {}
+[7.524025] (-) TimerEvent: {}
+[7.624320] (-) TimerEvent: {}
+[7.724526] (-) TimerEvent: {}
+[7.824734] (-) TimerEvent: {}
+[7.924953] (-) TimerEvent: {}
+[8.025156] (-) TimerEvent: {}
+[8.125391] (-) TimerEvent: {}
+[8.225600] (-) TimerEvent: {}
+[8.325879] (-) TimerEvent: {}
+[8.426107] (-) TimerEvent: {}
+[8.526333] (-) TimerEvent: {}
+[8.626578] (-) TimerEvent: {}
+[8.726828] (-) TimerEvent: {}
+[8.827038] (-) TimerEvent: {}
+[8.927233] (-) TimerEvent: {}
+[9.027479] (-) TimerEvent: {}
+[9.127715] (-) TimerEvent: {}
+[9.227953] (-) TimerEvent: {}
+[9.328190] (-) TimerEvent: {}
+[9.428396] (-) TimerEvent: {}
+[9.528626] (-) TimerEvent: {}
+[9.628877] (-) TimerEvent: {}
+[9.729114] (-) TimerEvent: {}
+[9.829307] (-) TimerEvent: {}
+[9.929510] (-) TimerEvent: {}
+[10.029714] (-) TimerEvent: {}
+[10.129956] (-) TimerEvent: {}
+[10.230197] (-) TimerEvent: {}
+[10.330464] (-) TimerEvent: {}
+[10.430711] (-) TimerEvent: {}
+[10.530970] (-) TimerEvent: {}
+[10.631215] (-) TimerEvent: {}
+[10.731458] (-) TimerEvent: {}
+[10.800312] (leo_explorer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/explore.dir/all] Error 2\n'}
+[10.800647] (leo_explorer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.802471] (leo_explorer) CommandEnded: {'returncode': 2}
+[10.807809] (leo_explorer) JobEnded: {'identifier': 'leo_explorer', 'rc': 2}
+[10.818395] (-) EventReactorShutdown: {}

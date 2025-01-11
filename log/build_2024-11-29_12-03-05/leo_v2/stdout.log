@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/leo_v2/leo_v2.egg-info
+writing ../../build/leo_v2/leo_v2.egg-info/PKG-INFO
+writing dependency_links to ../../build/leo_v2/leo_v2.egg-info/dependency_links.txt
+writing entry points to ../../build/leo_v2/leo_v2.egg-info/entry_points.txt
+writing requirements to ../../build/leo_v2/leo_v2.egg-info/requires.txt
+writing top-level names to ../../build/leo_v2/leo_v2.egg-info/top_level.txt
+writing manifest file '../../build/leo_v2/leo_v2.egg-info/SOURCES.txt'
+reading manifest file '../../build/leo_v2/leo_v2.egg-info/SOURCES.txt'
+writing manifest file '../../build/leo_v2/leo_v2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build
+creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib
+creating /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2
+copying leo_v2/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2
+copying leo_v2/map_saver.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2
+running install
+running install_lib
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2
+copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2
+copying /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build/lib/leo_v2/map_saver.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2
+byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2/map_saver.py to map_saver.cpython-312.pyc
+running install_data
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index/resource_index
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index/resource_index/packages
+copying resource/leo_v2 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/ament_index/resource_index/packages
+copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/launch
+copying launch/leo_autonav.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/launch
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config
+copying config/controller.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config
+copying config/planner.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config
+copying config/bt_nav.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/config
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/maps
+creating /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/behavior_tree_xml
+copying behavior_tree_xml/modified.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/behavior_tree_xml
+copying behavior_tree_xml/nav_to_pose_with_consistent_replanning_and_if_path_becomes_invalid.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/behavior_tree_xml
+running install_egg_info
+Copying ../../build/leo_v2/leo_v2.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages/leo_v2-0.0.0-py3.12.egg-info
+running install_scripts
+Installing map_saver script to /home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/leo_v2
+writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/install.log'

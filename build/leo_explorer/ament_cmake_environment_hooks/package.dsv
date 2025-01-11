@@ -1,0 +1,4 @@
+source;share/leo_explorer/local_setup.bash
+source;share/leo_explorer/local_setup.dsv
+source;share/leo_explorer/local_setup.sh
+source;share/leo_explorer/local_setup.zsh

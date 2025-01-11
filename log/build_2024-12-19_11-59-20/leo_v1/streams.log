@@ -1,0 +1,19 @@
+[1.664s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v1 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log --single-version-externally-managed install_data
+[1.982s] running egg_info
+[2.006s] writing ../../build/leo_v1/leo_v1.egg-info/PKG-INFO
+[2.017s] writing dependency_links to ../../build/leo_v1/leo_v1.egg-info/dependency_links.txt
+[2.017s] writing requirements to ../../build/leo_v1/leo_v1.egg-info/requires.txt
+[2.017s] writing top-level names to ../../build/leo_v1/leo_v1.egg-info/top_level.txt
+[2.068s] reading manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'
+[2.069s] writing manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'
+[2.069s] running build
+[2.070s] running build_py
+[2.071s] running install
+[2.077s] running install_lib
+[2.100s] running install_data
+[2.101s] running install_egg_info
+[2.149s] removing '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1-0.0.0-py3.12.egg-info' (and everything under it)
+[2.149s] Copying ../../build/leo_v1/leo_v1.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1-0.0.0-py3.12.egg-info
+[2.150s] running install_scripts
+[2.360s] writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log'
+[2.386s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v1 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log --single-version-externally-managed install_data

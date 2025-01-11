@@ -1,0 +1,26 @@
+[3.114s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v1 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log --single-version-externally-managed install_data
+[3.476s] /home/nathan/.local/lib/python3.12/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[3.476s]   warnings.warn(msg)
+[3.758s] running egg_info
+[3.802s] writing ../../build/leo_v1/leo_v1.egg-info/PKG-INFO
+[3.803s] writing dependency_links to ../../build/leo_v1/leo_v1.egg-info/dependency_links.txt
+[3.804s] writing requirements to ../../build/leo_v1/leo_v1.egg-info/requires.txt
+[3.804s] writing top-level names to ../../build/leo_v1/leo_v1.egg-info/top_level.txt
+[3.899s] reading manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'
+[3.901s] writing manifest file '../../build/leo_v1/leo_v1.egg-info/SOURCES.txt'
+[3.901s] running build
+[3.902s] running build_py
+[3.903s] copying leo_v1/__init__.py -> /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build/lib/leo_v1
+[3.903s] running install
+[3.914s] running install_lib
+[3.964s] running install_data
+[3.964s] copying resource/leo_v1 -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/ament_index/resource_index/packages
+[3.965s] copying package.xml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1
+[3.965s] copying launch/leo_v1_sim.launch.py -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/launch
+[3.966s] copying config/twist_mux_params.yaml -> /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/config
+[3.966s] running install_egg_info
+[4.016s] removing '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1-0.0.0-py3.12.egg-info' (and everything under it)
+[4.016s] Copying ../../build/leo_v1/leo_v1.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages/leo_v1-0.0.0-py3.12.egg-info
+[4.018s] running install_scripts
+[4.293s] writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log'
+[4.359s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v1 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log --single-version-externally-managed install_data

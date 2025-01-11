@@ -126,8 +126,9 @@ Explore::Explore()
   exploring_timer_ = this->create_wall_timer(
       std::chrono::milliseconds((uint16_t)(1000.0 / planner_frequency_)),
       [this]() { makePlan(); });
-  // Start exploration right away
-  exploring_timer_->execute_callback();
+
+  // Call the method with the proper argument
+  exploring_timer_->execute_callback(nullptr);
 }
 
 Explore::~Explore()
@@ -411,7 +412,7 @@ void Explore::resume()
   // Reactivate the timer
   exploring_timer_->reset();
   // Resume immediately
-  exploring_timer_->execute_callback();
+  exploring_timer_->execute_callback(nullptr);
 }
 
 }  // namespace explore

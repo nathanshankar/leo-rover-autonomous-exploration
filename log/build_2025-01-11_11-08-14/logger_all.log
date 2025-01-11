@@ -1,0 +1,391 @@
+[0.128s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.128s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x792f928cc740>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x792f928cc2f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x792f928cc2f0>>, mixin_verb=('build',))
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.171s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nathan/leo-rover-autonomous-exploration'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_description) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leo_description' with type 'ros.ament_python' and name 'leo_description'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_explorer) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leo_explorer' with type 'ros.ament_cmake' and name 'leo_explorer'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v1) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leo_v1' with type 'ros.ament_python' and name 'leo_v1'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v2) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leo_v2' with type 'ros.ament_python' and name 'leo_v2'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v3) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leo_v3' with type 'ros.ament_python' and name 'leo_v3'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/leo_v4) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leo_v4' with type 'ros.ament_python' and name 'leo_v4'
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.241s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/nathan/leo-rover-autonomous-exploration/install
+[0.244s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 484 installed packages in /opt/ros/jazzy
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'leo_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/leo-rover-autonomous-exploration/build/leo_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/leo-rover-autonomous-exploration/install/leo_description', 'merge_install': False, 'path': '/home/nathan/leo-rover-autonomous-exploration/src/leo_description', 'symlink_install': False, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'leo_explorer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'leo_explorer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer', 'merge_install': False, 'path': '/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer', 'symlink_install': False, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'leo_v1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1', 'merge_install': False, 'path': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1', 'symlink_install': False, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'leo_v2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2', 'merge_install': False, 'path': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v2', 'symlink_install': False, 'test_result_base': None}
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'leo_v3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3', 'merge_install': False, 'path': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3', 'symlink_install': False, 'test_result_base': None}
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'cmake_target' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'cmake_clean_first' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'cmake_force_configure' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'ament_cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'leo_v4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.321s] DEBUG:colcon.colcon_core.verb:Building package 'leo_v4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/leo-rover-autonomous-exploration/build/leo_v4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4', 'merge_install': False, 'path': '/home/nathan/leo-rover-autonomous-exploration/src/leo_v4', 'symlink_install': False, 'test_result_base': None}
+[0.321s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.323s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description' with build type 'ament_python'
+[0.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_description', 'ament_prefix_path')
+[0.326s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/hook/ament_prefix_path.ps1'
+[0.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/hook/ament_prefix_path.dsv'
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/hook/ament_prefix_path.sh'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer' with build type 'ament_cmake'
+[0.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer'
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.344s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1' with build type 'ament_python'
+[0.344s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v1', 'ament_prefix_path')
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/hook/ament_prefix_path.ps1'
+[0.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/hook/ament_prefix_path.dsv'
+[0.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/hook/ament_prefix_path.sh'
+[0.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.347s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.353s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v2' with build type 'ament_python'
+[0.353s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v2', 'ament_prefix_path')
+[0.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/hook/ament_prefix_path.ps1'
+[0.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/hook/ament_prefix_path.dsv'
+[0.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/hook/ament_prefix_path.sh'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.364s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3' with build type 'ament_python'
+[0.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v3', 'ament_prefix_path')
+[0.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/hook/ament_prefix_path.ps1'
+[0.365s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/hook/ament_prefix_path.dsv'
+[0.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/hook/ament_prefix_path.sh'
+[0.367s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.367s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.373s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v4' with build type 'ament_python'
+[0.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v4', 'ament_prefix_path')
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/hook/ament_prefix_path.ps1'
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/hook/ament_prefix_path.dsv'
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/hook/ament_prefix_path.sh'
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.718s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description'
+[0.718s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.718s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer -- -j20 -l20
+[1.103s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1'
+[1.103s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.535s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v2'
+[1.535s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.535s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.998s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3'
+[1.999s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.999s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer -- -j20 -l20
+[2.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer
+[2.388s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v4'
+[2.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.414s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_explorer)
+[2.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1:/home/nathan/leo-rover-autonomous-exploration/install/leo_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer
+[2.421s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer' for CMake module files
+[2.422s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer' for CMake config files
+[2.422s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_explorer', 'cmake_prefix_path')
+[2.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/hook/cmake_prefix_path.ps1'
+[2.423s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/hook/cmake_prefix_path.dsv'
+[2.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/hook/cmake_prefix_path.sh'
+[2.426s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib'
+[2.426s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/bin'
+[2.426s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib/pkgconfig/leo_explorer.pc'
+[2.427s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib/python3.12/site-packages'
+[2.427s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/bin'
+[2.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.ps1'
+[2.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.dsv'
+[2.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.sh'
+[2.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.bash'
+[2.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.zsh'
+[2.434s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/colcon-core/packages/leo_explorer)
+[2.435s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_explorer)
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer' for CMake module files
+[2.436s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer' for CMake config files
+[2.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_explorer', 'cmake_prefix_path')
+[2.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/hook/cmake_prefix_path.ps1'
+[2.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/hook/cmake_prefix_path.dsv'
+[2.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/hook/cmake_prefix_path.sh'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/bin'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib/pkgconfig/leo_explorer.pc'
+[2.441s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib/python3.12/site-packages'
+[2.441s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/bin'
+[2.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.ps1'
+[2.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.dsv'
+[2.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.sh'
+[2.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.bash'
+[2.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.zsh'
+[2.446s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/colcon-core/packages/leo_explorer)
+[4.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v1 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log --single-version-externally-managed install_data
+[4.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_description build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log --single-version-externally-managed install_data
+[4.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v3 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log --single-version-externally-managed install_data
+[4.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v4': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v4 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/install.log --single-version-externally-managed install_data
+[4.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v2 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/install.log --single-version-externally-managed install_data
+[5.578s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1' for CMake module files
+[5.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v1 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v1/install.log --single-version-externally-managed install_data
+[5.581s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1' for CMake config files
+[5.582s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib'
+[5.583s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/bin'
+[5.583s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/pkgconfig/leo_v1.pc'
+[5.583s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/lib/python3.12/site-packages'
+[5.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v1', 'pythonpath')
+[5.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/hook/pythonpath.ps1'
+[5.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/hook/pythonpath.dsv'
+[5.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/hook/pythonpath.sh'
+[5.588s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/bin'
+[5.588s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_v1)
+[5.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/package.ps1'
+[5.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/package.dsv'
+[5.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/package.sh'
+[5.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/package.bash'
+[5.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/leo_v1/package.zsh'
+[5.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_v1/share/colcon-core/packages/leo_v1)
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description' for CMake module files
+[5.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_description build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log --single-version-externally-managed install_data
+[5.677s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description' for CMake config files
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib'
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/bin'
+[5.679s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/pkgconfig/leo_description.pc'
+[5.680s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages'
+[5.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_description', 'pythonpath')
+[5.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/hook/pythonpath.ps1'
+[5.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/hook/pythonpath.dsv'
+[5.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/hook/pythonpath.sh'
+[5.684s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/bin'
+[5.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_description)
+[5.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/package.ps1'
+[5.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/package.dsv'
+[5.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/package.sh'
+[5.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/package.bash'
+[5.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/leo_description/package.zsh'
+[5.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_description/share/colcon-core/packages/leo_description)
+[5.823s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3' for CMake module files
+[5.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v3' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v3 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v3/install.log --single-version-externally-managed install_data
+[5.827s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3' for CMake config files
+[5.829s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib'
+[5.830s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/bin'
+[5.830s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/pkgconfig/leo_v3.pc'
+[5.830s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/lib/python3.12/site-packages'
+[5.831s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v3', 'pythonpath')
+[5.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/hook/pythonpath.ps1'
+[5.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/hook/pythonpath.dsv'
+[5.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/hook/pythonpath.sh'
+[5.835s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/bin'
+[5.835s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_v3)
+[5.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/package.ps1'
+[5.839s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/package.dsv'
+[5.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/package.sh'
+[5.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/package.bash'
+[5.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/leo_v3/package.zsh'
+[5.846s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_v3/share/colcon-core/packages/leo_v3)
+[5.884s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4' for CMake module files
+[5.886s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4' for CMake config files
+[5.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v4' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v4 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v4/install.log --single-version-externally-managed install_data
+[5.889s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib'
+[5.890s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/bin'
+[5.890s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/pkgconfig/leo_v4.pc'
+[5.890s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/lib/python3.12/site-packages'
+[5.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v4', 'pythonpath')
+[5.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/hook/pythonpath.ps1'
+[5.893s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/hook/pythonpath.dsv'
+[5.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/hook/pythonpath.sh'
+[5.896s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/bin'
+[5.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_v4)
+[5.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/package.ps1'
+[5.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/package.dsv'
+[5.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/package.sh'
+[5.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/package.bash'
+[5.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/leo_v4/package.zsh'
+[5.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_v4/share/colcon-core/packages/leo_v4)
+[5.977s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2' for CMake module files
+[5.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_v2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_v2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_v2 build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_v2/install.log --single-version-externally-managed install_data
+[5.978s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2' for CMake config files
+[5.979s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib'
+[5.979s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/bin'
+[5.979s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/pkgconfig/leo_v2.pc'
+[5.979s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/lib/python3.12/site-packages'
+[5.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('leo_v2', 'pythonpath')
+[5.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/hook/pythonpath.ps1'
+[5.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/hook/pythonpath.dsv'
+[5.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/hook/pythonpath.sh'
+[5.981s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/bin'
+[5.982s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leo_v2)
+[5.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/package.ps1'
+[5.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/package.dsv'
+[5.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/package.sh'
+[5.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/package.bash'
+[5.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/leo_v2/package.zsh'
+[5.984s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/leo-rover-autonomous-exploration/install/leo_v2/share/colcon-core/packages/leo_v2)
+[5.984s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.985s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.985s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.985s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.994s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.994s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.994s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.017s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.017s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/leo-rover-autonomous-exploration/install/local_setup.ps1'
+[6.019s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nathan/leo-rover-autonomous-exploration/install/_local_setup_util_ps1.py'
+[6.020s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/leo-rover-autonomous-exploration/install/setup.ps1'
+[6.021s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/leo-rover-autonomous-exploration/install/local_setup.sh'
+[6.022s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nathan/leo-rover-autonomous-exploration/install/_local_setup_util_sh.py'
+[6.023s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/leo-rover-autonomous-exploration/install/setup.sh'
+[6.024s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/leo-rover-autonomous-exploration/install/local_setup.bash'
+[6.025s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/leo-rover-autonomous-exploration/install/setup.bash'
+[6.027s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/leo-rover-autonomous-exploration/install/local_setup.zsh'
+[6.027s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/leo-rover-autonomous-exploration/install/setup.zsh'

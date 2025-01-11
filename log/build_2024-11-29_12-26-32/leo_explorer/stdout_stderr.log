@@ -1,0 +1,37 @@
+[ 20%] Built target gtest_main
+[ 40%] Built target gtest
+[ 60%] Built target test_explore
+[ 70%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:[m[K In constructor ‘[01m[Kexplore::Explore::[01;32m[KExplore[m[K()[m[K’:
+[01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:130:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::TimerBase::execute_callback()[m[K’
+  130 |   [01;31m[Kexploring_timer_->execute_callback()[m[K;
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:30[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer.h:43[m[K,
+                 from [01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include/explore/costmap_client.h:41[m[K,
+                 from [01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include/explore/explore.h:41[m[K,
+                 from [01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:39[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::TimerBase::[01;32m[Kexecute_callback[m[K(const std::shared_ptr<void>&)[m[K’
+  124 |   [01;36m[Kexecute_callback[m[K(const std::shared_ptr<void> & data) = 0;
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:[m[K In member function ‘[01m[Kvoid explore::Explore::[01;32m[Kresume[m[K()[m[K’:
+[01m[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:414:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::TimerBase::execute_callback()[m[K’
+  414 |   [01;31m[Kexploring_timer_->execute_callback()[m[K;
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::TimerBase::[01;32m[Kexecute_callback[m[K(const std::shared_ptr<void>&)[m[K’
+  124 |   [01;36m[Kexecute_callback[m[K(const std::shared_ptr<void> & data) = 0;
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/explore.dir/build.make:90: CMakeFiles/explore.dir/src/explore.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/explore.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

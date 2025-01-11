@@ -1,0 +1,19 @@
+[2.297s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_description build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log --single-version-externally-managed install_data
+[2.661s] running egg_info
+[2.681s] writing ../../build/leo_description/leo_description.egg-info/PKG-INFO
+[2.682s] writing dependency_links to ../../build/leo_description/leo_description.egg-info/dependency_links.txt
+[2.682s] writing requirements to ../../build/leo_description/leo_description.egg-info/requires.txt
+[2.682s] writing top-level names to ../../build/leo_description/leo_description.egg-info/top_level.txt
+[2.725s] reading manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+[2.727s] writing manifest file '../../build/leo_description/leo_description.egg-info/SOURCES.txt'
+[2.727s] running build
+[2.727s] running build_py
+[2.728s] running install
+[2.734s] running install_lib
+[2.755s] running install_data
+[2.757s] running install_egg_info
+[2.789s] removing '/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description-0.0.0-py3.12.egg-info' (and everything under it)
+[2.789s] Copying ../../build/leo_description/leo_description.egg-info to /home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages/leo_description-0.0.0-py3.12.egg-info
+[2.790s] running install_scripts
+[2.925s] writing list of installed files to '/home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log'
+[2.956s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/src/leo_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nathan/leo-rover-autonomous-exploration/build/leo_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/leo-rover-autonomous-exploration/install/leo_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/leo_description build --build-base /home/nathan/leo-rover-autonomous-exploration/build/leo_description/build install --record /home/nathan/leo-rover-autonomous-exploration/build/leo_description/install.log --single-version-externally-managed install_data

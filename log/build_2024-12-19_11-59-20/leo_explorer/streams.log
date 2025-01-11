@@ -1,0 +1,47 @@
+[0.175s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer -- -j20 -l20
+[0.794s] [ 10%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[0.795s] [ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.795s] [ 30%] [32mBuilding CXX object CMakeFiles/explore.dir/src/costmap_client.cpp.o[0m
+[0.795s] [ 40%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[0.795s] [ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/frontier_search.cpp.o[0m
+[0.795s] [ 60%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[0.849s] [ 60%] Built target gtest_main
+[3.565s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[3.644s] [ 70%] Built target gtest
+[3.681s] [ 80%] [32mBuilding CXX object CMakeFiles/test_explore.dir/test/test_explore.cpp.o[0m
+[4.521s] [ 90%] [32m[1mLinking CXX executable test_explore[0m
+[5.272s] [ 90%] Built target test_explore
+[9.621s] [100%] [32m[1mLinking CXX executable explore[0m
+[10.841s] [100%] Built target explore
+[10.865s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer -- -j20 -l20
+[10.889s] Invoking command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer
+[10.900s] -- Install configuration: ""
+[10.900s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/include/explore/
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/include/explore//frontier_search.h
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/include/explore//costmap_tools.h
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/include/explore//explore.h
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/include/explore//costmap_client.h
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/config
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/config/params_costmap.yaml
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/config/params.yaml
+[10.901s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/launch
+[10.902s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/launch/explore.launch.py
+[10.902s] -- Installing: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib/leo_explorer/explore
+[10.913s] -- Set non-toolchain portion of runtime path of "/home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/lib/leo_explorer/explore" to ""
+[10.913s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/ament_index/resource_index/package_run_dependencies/leo_explorer
+[10.913s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/ament_index/resource_index/parent_prefix_path/leo_explorer
+[10.914s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/environment/ament_prefix_path.sh
+[10.914s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/environment/ament_prefix_path.dsv
+[10.914s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/environment/path.sh
+[10.914s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/environment/path.dsv
+[10.915s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/local_setup.bash
+[10.915s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/local_setup.sh
+[10.915s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/local_setup.zsh
+[10.915s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/local_setup.dsv
+[10.915s] -- Installing: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.dsv
+[10.916s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/ament_index/resource_index/packages/leo_explorer
+[10.916s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.916s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/cmake/leo_explorerConfig.cmake
+[10.916s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/cmake/leo_explorerConfig-version.cmake
+[10.917s] -- Up-to-date: /home/nathan/leo-rover-autonomous-exploration/install/leo_explorer/share/leo_explorer/package.xml
+[10.919s] Invoked command in '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nathan/leo-rover-autonomous-exploration/build/leo_explorer

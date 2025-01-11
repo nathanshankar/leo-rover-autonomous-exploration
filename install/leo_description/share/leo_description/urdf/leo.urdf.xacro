@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="leo">
+
+  <xacro:arg name="robot_ns" default="leo"/>
+
+  <xacro:arg name="fixed" default="false"/>
+  <xacro:arg name="default_antenna" default="true"/>
+  <xacro:arg name="rockers_fixed" default="true"/>
+
+  <xacro:include filename="$(find leo_description)/urdf/leo.gazebo.xacro"/>
+
+  <xacro:if value="false">
+    <link name="world"/>
+    <joint name="fixed" type="fixed">
+      <parent link="world"/>
+      <child link="base_link"/>
+      <origin xyz="0.0 0.0 0"/>
+    </joint>
+  </xacro:if>
+
+  <!-- MACROS -->
+
+  <xacro:macro name="rocker_link" params="name">
+    <link name="rocker_${name}_link">
+      <inertial>
+        <mass value="1.387336"/>
+        <origin xyz="0 0.01346 -0.06506"/>
+        <inertia
+          ixx="0.002956" ixy="-0.000001489324" ixz="-0.000008103407"
+          iyy="0.02924"  iyz="0.00007112"
+          izz="0.02832"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="file:///$(find leo_description)/models/Rocker.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="file:///$(find leo_description)/models/Rocker_outline.stl"/>
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="wheel_link" params="name model"> 
+    <link name="wheel_${name}_link">
+      <inertial>
+        <mass value="0.283642"/>
+        <origin xyz="0 0.030026 0"/>
+        <inertia
+          ixx="0.000391"  ixy="0.00000123962" ixz="5.52582e-7"
+          iyy="0.0004716" iyz="-0.000002082042"
+          izz="0.000391"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="file:///$(find leo_description)/models/Wheel${model}.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0.04485 0" rpy="${3.141592653589793/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.057" length="0.07"/>
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0 0.04485 0" rpy="${3.141592653589793/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.0625" length="0.04"/>
+        </geometry>
+      </collision>
+      <collision>
+        <geometry>
+          <mesh filename="file:///$(find leo_description)/models/Wheel_outline.stl"/>
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+  <!-- LINKS -->
+
+  <link name="base_link">
+    <inertial>
+      <mass value="1.584994"/>
+      <origin xyz="-0.019662 0.011643 -0.031802"/>
+      <inertia
+        ixx="0.01042" ixy="0.001177" ixz="-0.0008871"
+        iyy="0.01045" iyz="0.0002226"
+        izz="0.01817"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="file:///$(find leo_description)/models/Chassis.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///$(find leo_description)/models/Chassis_outline.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="base_footprint"/>
+
+  <xacro:rocker_link name="L"/>
+  <xacro:rocker_link name="R"/>
+  <xacro:wheel_link name="FL" model="A"/>
+  <xacro:wheel_link name="RL" model="A"/>
+  <xacro:wheel_link name="FR" model="B"/>
+  <xacro:wheel_link name="RR" model="B"/>
+
+  <xacro:if value="true">
+    <link name="antenna_link">
+      <inertial>
+        <mass value="0.001237"/>
+        <origin xyz="0 0 0.028828"/>
+        <inertia
+          ixx="2.5529e-7" ixy="0.0" ixz="0.0"
+          iyy="2.5529e-7" iyz="0.0"
+          izz="1.354e-8"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="file:///$(find leo_description)/models/Antenna.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.028"/>
+        <geometry>
+          <cylinder radius="0.0055" length="0.056"/>
+        </geometry>
+      </collision>
+    </link>
+  </xacro:if>
+
+  <link name="camera_frame"/>
+  <link name="camera_optical_frame"/>
+  <link name="rplidar_link">
+    <visual>
+      <origin xyz="0 0 0.003"/>
+      <geometry>
+        <box size="0.079 0.086 0.006"/>
+      </geometry>
+      <material name="support">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0.023"/>
+      <geometry>
+        <cylinder radius="0.038" length="0.04"/>
+      </geometry>
+      <material name="lidar">
+        <color rgba="1.0 0.0 0.0 0.7"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.003"/>
+      <geometry>
+        <box size="0.079 0.086 0.006"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.023"/>
+      <geometry>
+        <cylinder radius="0.038" length="0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rplidar_joint" type="fixed">
+    <origin xyz="0.0775 0 0"/>
+    <parent link="base_link"/>
+    <child link="rplidar_link"/>
+  </joint>
+
+  <link name="laser_frame"/>
+
+  <!-- JOINTS -->
+
+  <xacro:if value="true">
+    <xacro:property name="rockers_joint_type" value="fixed"/>
+  </xacro:if>
+  <xacro:unless value="true">
+    <xacro:property name="rockers_joint_type" value="revolute"/>
+  </xacro:unless>
+
+  <joint name="rocker_L_joint" type="${rockers_joint_type}">
+    <origin xyz="0.00263 0.14167 -0.04731" rpy="0 0 ${3.141592653589793}"/>
+    <parent link="base_link"/>
+    <child link="rocker_L_link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100.0" lower="-0.24" upper="0.24" velocity="100.0"/>
+    <dynamics friction="1.0" damping="0.1"/>
+  </joint>
+
+  <joint name="rocker_R_joint" type="${rockers_joint_type}">
+    <origin xyz="0.00263 -0.14167 -0.04731" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="rocker_R_link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100.0" lower="-0.24" upper="0.24" velocity="100.0"/>
+    <dynamics friction="1.0" damping="0.1"/> 
+    <mimic joint="rocker_L_joint"/>
+  </joint>
+
+  <joint name="wheel_FL_joint" type="continuous">
+    <origin xyz="-0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
+    <parent link="rocker_L_link"/>
+    <child link="wheel_FL_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2.0" velocity="6.0"/>
+    <dynamics friction="0.3125" damping="0.1"/>
+  </joint>
+
+  <joint name="wheel_RL_joint" type="continuous">
+    <origin xyz="0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
+    <parent link="rocker_L_link"/>
+    <child link="wheel_RL_link"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2.0" velocity="6.0"/>
+    <dynamics friction="0.3125" damping="0.1"/>
+  </joint>
+
+  <joint name="wheel_RR_joint" type="continuous">
+    <origin xyz="-0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
+    <parent link="rocker_R_link"/>
+    <child link="wheel_RR_link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="2.0" velocity="6.0"/>
+    <dynamics friction="0.3125" damping="0.1"/>
+  </joint>
+
+  <joint name="wheel_FR_joint" type="continuous">
+    <origin xyz="0.15256 -0.08214 -0.08802" rpy="0 0 0"/>
+    <parent link="rocker_R_link"/>
+    <child link="wheel_FR_link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="2.0" velocity="6.0"/>
+    <dynamics friction="0.3125" damping="0.1"/> 
+  </joint>
+
+  <xacro:if value="true">
+    <joint name="antenna_joint" type="fixed">
+      <origin xyz="-0.0052 0.056 -0.0065" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="antenna_link"/>
+    </joint>
+  </xacro:if>
+
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="0.0971 0 -0.0427" rpy="0 0.2094 0"/>
+    <parent link="base_link"/>
+    <child link="camera_frame"/>
+  </joint>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-${3.141592653589793/2} 0.0 -${3.141592653589793/2}"/>
+    <parent link="camera_frame"/>
+    <child link="camera_optical_frame"/>
+  </joint>
+
+  <joint name="footprint_joint" type="fixed">
+    <origin xyz="0 0 -0.19783" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+  </joint>
+
+  <joint name="laser_joint" type="fixed">
+    <origin xyz="0 0 0.0368" rpy="0 0 ${pi}"/>
+    <parent link="rplidar_link"/>
+    <child link="laser_frame"/>
+  </joint>
+
+  <!-- TRANSMISSIONS -->
+  
+  <transmission name="wheel_FL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_FL_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_FL_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="wheel_RL_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_RL_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_RL_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="wheel_FR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_FR_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_FR_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <transmission name="wheel_RR_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_RR_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_RR_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </actuator>
+  </transmission>
+
+  <xacro:unless value="true">
+    <transmission name="rocker_L_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="rocker_L_joint">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="rocker_L_virtual_motor"/>
+    </transmission>
+
+    <transmission name="rocker_R_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="rocker_R_joint">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="rocker_R_virtual_motor"/>
+    </transmission>
+  </xacro:unless>
+
+</robot>

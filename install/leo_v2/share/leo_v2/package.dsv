@@ -1,0 +1,6 @@
+source;share/leo_v2/hook/pythonpath.ps1
+source;share/leo_v2/hook/pythonpath.dsv
+source;share/leo_v2/hook/pythonpath.sh
+source;share/leo_v2/hook/ament_prefix_path.ps1
+source;share/leo_v2/hook/ament_prefix_path.dsv
+source;share/leo_v2/hook/ament_prefix_path.sh

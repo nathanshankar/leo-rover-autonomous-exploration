@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.000264] (-) JobUnselected: {'identifier': 'leo_description'}
+[0.000373] (-) JobUnselected: {'identifier': 'leo_v1'}
+[0.000400] (-) JobUnselected: {'identifier': 'leo_v2'}
+[0.000421] (-) JobUnselected: {'identifier': 'leo_v3'}
+[0.000441] (-) JobUnselected: {'identifier': 'leo_v4'}
+[0.000463] (leo_explorer) JobQueued: {'identifier': 'leo_explorer', 'dependencies': OrderedDict()}
+[0.000487] (leo_explorer) JobStarted: {'identifier': 'leo_explorer'}
+[0.007289] (leo_explorer) JobProgress: {'identifier': 'leo_explorer', 'progress': 'cmake'}
+[0.007590] (leo_explorer) JobProgress: {'identifier': 'leo_explorer', 'progress': 'build'}
+[0.008155] (leo_explorer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', '--', '-j20', '-l20'], 'cwd': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'nathan', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nathan', 'OLDPWD': '/home/nathan', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2832', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'nathan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nathan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nathan:@/tmp/.ICE-unix/2790,unix/nathan:/tmp/.ICE-unix/2790', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ee1f5333_6151_4bcd_ba30_e8bd27f61d75', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.AA0WX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.121', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nathan/leo-rover-autonomous-exploration/build/leo_explorer', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.061451] (leo_explorer) StdoutLine: {'line': b'[ 20%] Built target gtest_main\n'}
+[0.065399] (leo_explorer) StdoutLine: {'line': b'[ 40%] Built target gtest\n'}
+[0.080399] (leo_explorer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o\x1b[0m\n'}
+[0.091989] (leo_explorer) StdoutLine: {'line': b'[ 70%] Built target test_explore\n'}
+[0.099569] (-) TimerEvent: {}
+[0.199956] (-) TimerEvent: {}
+[0.300344] (-) TimerEvent: {}
+[0.400735] (-) TimerEvent: {}
+[0.501121] (-) TimerEvent: {}
+[0.601517] (-) TimerEvent: {}
+[0.701916] (-) TimerEvent: {}
+[0.802307] (-) TimerEvent: {}
+[0.902705] (-) TimerEvent: {}
+[1.003094] (-) TimerEvent: {}
+[1.103488] (-) TimerEvent: {}
+[1.203912] (-) TimerEvent: {}
+[1.304303] (-) TimerEvent: {}
+[1.404722] (-) TimerEvent: {}
+[1.505182] (-) TimerEvent: {}
+[1.605603] (-) TimerEvent: {}
+[1.706021] (-) TimerEvent: {}
+[1.806454] (-) TimerEvent: {}
+[1.906889] (-) TimerEvent: {}
+[2.007304] (-) TimerEvent: {}
+[2.107748] (-) TimerEvent: {}
+[2.208173] (-) TimerEvent: {}
+[2.308581] (-) TimerEvent: {}
+[2.408981] (-) TimerEvent: {}
+[2.509366] (-) TimerEvent: {}
+[2.609779] (-) TimerEvent: {}
+[2.683150] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kexplore::Explore::\x1b[01;32m\x1b[KExplore\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.683385] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:130:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::TimerBase::execute_callback()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.683504] (leo_explorer) StderrLine: {'line': b'  130 |   \x1b[01;31m\x1b[Kexploring_timer_->execute_callback()\x1b[m\x1b[K;\n'}
+[2.683629] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.683733] (leo_explorer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:30\x1b[m\x1b[K,\n'}
+[2.683833] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.683931] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.684027] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.684122] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[2.684221] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[2.684314] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.684405] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.684497] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[2.684601] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer_interface.h:48\x1b[m\x1b[K,\n'}
+[2.684696] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/tf2_ros/tf2_ros/buffer.h:43\x1b[m\x1b[K,\n'}
+[2.684787] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include/explore/costmap_client.h:41\x1b[m\x1b[K,\n'}
+[2.684880] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/include/explore/explore.h:41\x1b[m\x1b[K,\n'}
+[2.684972] (leo_explorer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:39\x1b[m\x1b[K:\n'}
+[2.685065] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rclcpp::TimerBase::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.685160] (leo_explorer) StderrLine: {'line': b'  124 |   \x1b[01;36m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void> & data) = 0;\n'}
+[2.685251] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.685342] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[2.698014] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid explore::Explore::\x1b[01;32m\x1b[Kresume\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.698195] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nathan/leo-rover-autonomous-exploration/src/leo_explorer/src/explore.cpp:414:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::TimerBase::execute_callback()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.698286] (leo_explorer) StderrLine: {'line': b'  414 |   \x1b[01;31m\x1b[Kexploring_timer_->execute_callback()\x1b[m\x1b[K;\n'}
+[2.698369] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.698451] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual void rclcpp::TimerBase::\x1b[01;32m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.698534] (leo_explorer) StderrLine: {'line': b'  124 |   \x1b[01;36m\x1b[Kexecute_callback\x1b[m\x1b[K(const std::shared_ptr<void> & data) = 0;\n'}
+[2.698855] (leo_explorer) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.698938] (leo_explorer) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:124:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[2.709850] (-) TimerEvent: {}
+[2.810076] (-) TimerEvent: {}
+[2.910405] (-) TimerEvent: {}
+[3.010728] (-) TimerEvent: {}
+[3.110936] (-) TimerEvent: {}
+[3.211138] (-) TimerEvent: {}
+[3.311381] (-) TimerEvent: {}
+[3.411731] (-) TimerEvent: {}
+[3.511942] (-) TimerEvent: {}
+[3.612189] (-) TimerEvent: {}
+[3.712505] (-) TimerEvent: {}
+[3.812888] (-) TimerEvent: {}
+[3.913203] (-) TimerEvent: {}
+[4.013542] (-) TimerEvent: {}
+[4.113926] (-) TimerEvent: {}
+[4.214282] (-) TimerEvent: {}
+[4.314602] (-) TimerEvent: {}
+[4.414918] (-) TimerEvent: {}
+[4.515253] (-) TimerEvent: {}
+[4.615580] (-) TimerEvent: {}
+[4.715930] (-) TimerEvent: {}
+[4.816238] (-) TimerEvent: {}
+[4.860586] (leo_explorer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/explore.dir/build.make:90: CMakeFiles/explore.dir/src/explore.cpp.o] Error 1\n'}
+[4.860976] (leo_explorer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:157: CMakeFiles/explore.dir/all] Error 2\n'}
+[4.861116] (leo_explorer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.863076] (leo_explorer) CommandEnded: {'returncode': 2}
+[4.868028] (leo_explorer) JobEnded: {'identifier': 'leo_explorer', 'rc': 2}
+[4.878689] (-) EventReactorShutdown: {}

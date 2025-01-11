@@ -1,0 +1,4 @@
+[ 20%] Built target gtest_main
+[ 40%] Built target gtest
+[ 50%] [32mBuilding CXX object CMakeFiles/explore.dir/src/explore.cpp.o[0m
+[ 70%] Built target test_explore

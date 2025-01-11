@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<robot name="gazebo_configs" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="gazebo_configs">
+
+    <gazebo reference="$(arg robot_name)/arm_base_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/shoulder_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <self_collide>true</self_collide>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/upper_arm_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <self_collide>true</self_collide>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/forearm_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <self_collide>true</self_collide>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/upper_forearm_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <self_collide>true</self_collide>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/lower_forearm_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <self_collide>true</self_collide>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/wrist_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <self_collide>true</self_collide>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/gripper_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/gripper_prop_link">
+      <dampingFactor>0.01</dampingFactor>
+      <material>Gazebo/DarkGray</material>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/gripper_bar_link">
+      <material>Gazebo/DarkGray</material>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/left_finger_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="$(arg robot_name)/right_finger_link">
+      <material>Gazebo/DarkGray</material>
+      <dampingFactor>0.01</dampingFactor>
+      <static>true</static>
+    </gazebo>
+
+    <gazebo reference="ar_tag">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <gazebo reference="ee_arm">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <gazebo reference="gripper_bar">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <gazebo reference="ee_bar">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <gazebo reference="ee_gripper">
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <!--
+        <gazebo>
+          <plugin name="init_joint_control" filename="libJointControlPlugin.so">
+            <controller type="position">
+              <joint>waist</joint>
+              <target>${pi}</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+
+            <controller type="position">
+              <joint>shoulder</joint>
+              <target>${pi}</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+
+            <controller type="position">
+              <joint>elbow</joint>
+              <target>${pi}</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+
+            <controller type="position">
+              <joint>wrist_angle</joint>
+              <target>${pi}</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+
+            <controller type="position">
+              <joint>wrist_rotate</joint>
+              <target>${pi}</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+
+            <controller type="position">
+              <joint>gripper</joint>
+              <target>${pi}</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+
+            <controller type="position">
+              <joint>left_finger</joint>
+              <target>1.0</target>
+              <pid_gains>1 0.1 0.01</pid_gains>
+            </controller>
+          </plugin>
+        </gazebo>
+    -->
+  </xacro:macro>
+  <gazebo>
+        <plugin filename="ignition-gazebo-joint-state-publisher-system" name="ignition::gazebo::systems::JointStatePublisher">
+            <update_rate>20</update_rate>
+            <joint_name>waist</joint_name>
+            <joint_name>shoulder</joint_name>
+            <joint_name>elbow</joint_name>
+            <joint_name>wrist_angle</joint_name>
+            <joint_name>wrist_rotate</joint_name>
+            <joint_name>gripper</joint_name>
+            <joint_name>left_finger</joint_name>
+            <joint_name>right_finger</joint_name>
+        </plugin>
+  </gazebo>
+  <gazebo>
+    <!-- Joint States -->
+    <plugin filename="libignition-gazebo-joint-state-publisher-system.so" name="ignition::gazebo::systems::JointStatePublisher"/>
+
+    <!-- Joint Trajectories -->
+    <plugin filename="libignition-gazebo-joint-trajectory-controller-system.so" name="ignition::gazebo::systems::JointTrajectoryController">
+      
+      <topic>joint_trajectory</topic>
+
+      <joint_name>waist</joint_name>
+      <initial_position>0.0</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>${-pi + pi_offset}</position_cmd_min>
+      <position_cmd_max>${pi - pi_offset}</position_cmd_max>
+
+      <joint_name>shoulder</joint_name>
+      <initial_position>-1.7999999523162842</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>${radians(-113)}</position_cmd_min>
+      <position_cmd_max>${radians(111)}</position_cmd_max>
+
+      <joint_name>elbow</joint_name>
+      <initial_position>1.5499999523162842</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>${radians(-120)}</position_cmd_min>
+      <position_cmd_max>${radians(95)}</position_cmd_max>
+
+      <joint_name>wrist_angle</joint_name>
+      <initial_position>0.3141592653589796</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>${radians(-100)}</position_cmd_min>
+      <position_cmd_max>${radians(123)}</position_cmd_max>
+
+      <joint_name>wrist_rotate</joint_name>
+      <initial_position>0.0</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>${-pi + pi_offset}</position_cmd_min>
+      <position_cmd_max>${pi - pi_offset}</position_cmd_max>
+
+      <joint_name>gripper</joint_name>
+      <initial_position>0.0634808731572743</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+
+      <joint_name>left_finger</joint_name>
+      <initial_position>0.02040194553757311</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>0.015</position_cmd_min>
+      <position_cmd_max>0.037</position_cmd_max>
+
+      <joint_name>right_finger</joint_name>
+      <initial_position>-0.02040194553757311</initial_position>
+      <position_p_gain>200</position_p_gain>
+      <position_d_gain>0.5</position_d_gain>
+      <position_i_gain>990</position_i_gain>
+      <position_i_min>-15</position_i_min>
+      <position_i_max>15</position_i_max>
+      <position_cmd_min>-0.037</position_cmd_min>
+      <position_cmd_max>-0.015</position_cmd_max>
+
+    </plugin>
+
+  </gazebo>
+</robot>
