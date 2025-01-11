@@ -1,2 +1,0 @@
-[console_scripts]
-map_saver = leo_v2.map_saver:main

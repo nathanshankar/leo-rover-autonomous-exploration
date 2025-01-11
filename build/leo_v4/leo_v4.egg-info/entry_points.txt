@@ -1,2 +1,0 @@
-[console_scripts]
-autonav_starter = leo_v4.autonav_starter:main

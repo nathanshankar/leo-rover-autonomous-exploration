@@ -1,8 +1,0 @@
-source;share/leo_explorer/hook/cmake_prefix_path.ps1
-source;share/leo_explorer/hook/cmake_prefix_path.dsv
-source;share/leo_explorer/hook/cmake_prefix_path.sh
-source;share/leo_explorer/local_setup.bash
-source;share/leo_explorer/local_setup.dsv
-source;share/leo_explorer/local_setup.ps1
-source;share/leo_explorer/local_setup.sh
-source;share/leo_explorer/local_setup.zsh
